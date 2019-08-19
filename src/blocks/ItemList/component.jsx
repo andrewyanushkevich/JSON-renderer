@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { List } from "antd";
 
 import Item from "../Item";
+import filterItems from "../../api/filterItems";
 
 import { StyledList } from "./styles";
 
@@ -12,11 +13,12 @@ class ItemList extends Component {
   }
 
   render() {
-    const { items } = this.props;
+    const { filter, items } = this.props;
+    const filteredItems = filterItems(items, filter);
     return (
       <StyledList>
         <List
-          dataSource={items}
+          dataSource={filteredItems}
           split={false}
           renderItem={item => (
             <List.Item>
@@ -26,9 +28,9 @@ class ItemList extends Component {
           pagination={{
             defaultCurrent: 1,
             position: "both",
-            total: items.length,
+            total: filteredItems.length,
             hideOnSinglePage: true,
-            pageSize: 5,
+            pageSize: 5
           }}
         />
       </StyledList>
