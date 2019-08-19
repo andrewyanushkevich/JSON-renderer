@@ -1,27 +1,38 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { List } from "antd";
 
-import Item from '../Item';
-import getItems from '../../api/getItems';
+import Item from "../Item";
+
+import { StyledList } from "./styles";
 
 class ItemList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: []
-    };
-  }
-
-  async componentDidMount() {
-    const res = await getItems();
-    this.setState({
-      items: res
-    });
+  componentDidMount() {
+    const { handleGetItems } = this.props;
+    handleGetItems();
   }
 
   render() {
-    const { items } = this.state;
-    return <div><Item item={items[0]}></Item></div>;
+    const { items } = this.props;
+    return (
+      <StyledList>
+        <List
+          dataSource={items}
+          split={false}
+          renderItem={item => (
+            <List.Item>
+              <Item item={item} />
+            </List.Item>
+          )}
+          pagination={{
+            defaultCurrent: 1,
+            position: "both",
+            total: items.length,
+            hideOnSinglePage: true,
+            pageSize: 5,
+          }}
+        />
+      </StyledList>
+    );
   }
 }
 
