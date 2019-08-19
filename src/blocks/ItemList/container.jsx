@@ -6,6 +6,7 @@ import getItems from '../../api/getItems';
 
 const mapStateToProps = state => ({
   items: state.items,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
