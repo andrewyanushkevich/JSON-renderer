@@ -4,7 +4,10 @@ import { filterItems } from '../../actions';
 import WrappedFilter from './component';
 
 const mapDispatchToProps = dispatch => ({
-  filter: filter => dispatch(filterItems(filter))
+  filter: filter => dispatch(filterItems(filter)),
 });
 
-export default connect(null, mapDispatchToProps)(WrappedFilter);
+export default connect(
+  null,
+  mapDispatchToProps,
+)(WrappedFilter);

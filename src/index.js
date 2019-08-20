@@ -1,15 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import "antd/dist/antd.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ScrollMemory from 'react-router-scroll-memory';
 
-import store from "./store";
-import Home from "./pages/home";
+import 'antd/dist/antd.css';
+
+import store from './store';
+import Home from './pages/home';
+import ViewItem from './pages/ViewItem';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Home />
-  </Provider>,
-
-  document.getElementById("root")
+  <BrowserRouter>
+    <Provider store={store}>
+      <ScrollMemory />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/:id?" component={ViewItem} />
+      </Switch>
+    </Provider>
+  </BrowserRouter>,
+  document.getElementById('root'),
 );

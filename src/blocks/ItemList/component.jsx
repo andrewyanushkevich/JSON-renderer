@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { List } from "antd";
+import React, { Component } from 'react';
+import { List } from 'antd';
+import PropTypes from 'prop-types';
 
-import Item from "../Item";
-import filterItems from "../../api/filterItems";
+import Item from '../Item';
 
-import { StyledList } from "./styles";
+import { StyledList } from './styles';
 
 class ItemList extends Component {
   componentDidMount() {
@@ -13,12 +13,11 @@ class ItemList extends Component {
   }
 
   render() {
-    const { filter, items } = this.props;
-    const filteredItems = filterItems(items, filter);
+    const { items } = this.props;
     return (
       <StyledList>
         <List
-          dataSource={filteredItems}
+          dataSource={items}
           split={false}
           renderItem={item => (
             <List.Item>
@@ -27,15 +26,34 @@ class ItemList extends Component {
           )}
           pagination={{
             defaultCurrent: 1,
-            position: "both",
-            total: filteredItems.length,
+            position: 'both',
+            total: items.length,
             hideOnSinglePage: true,
-            pageSize: 5
+            pageSize: 5,
           }}
         />
       </StyledList>
     );
   }
 }
+
+ItemList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.shape({
+        $oid: PropTypes.string,
+      }),
+      title: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      size: PropTypes.arrayOf(PropTypes.string).isRequired,
+      images: PropTypes.arrayOf(PropTypes.string).isRequired,
+      rating: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      color: PropTypes.arrayOf(PropTypes.string).isRequired,
+      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired,
+  ).isRequired,
+  handleGetItems: PropTypes.func.isRequired,
+};
 
 export default ItemList;
