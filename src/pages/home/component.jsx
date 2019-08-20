@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ItemList from '../../blocks/ItemList';
-import Filter from '../../blocks/Filter';
 
 import { StyledDiv } from './styles';
 
-class Home extends Component {
-  render() {
-    return (
-      <StyledDiv>
-        <ItemList />
-        <Filter />
-      </StyledDiv>
-    );
-  }
-}
+const Home = () => {
+  return (
+    <StyledDiv>
+      <ItemList />
+    </StyledDiv>
+  );
+};
 
 export default Home;

@@ -1,8 +1,26 @@
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 
-import ItemList from "./component";
-import { getItemsRequest } from "../../actions";
-import getItems from '../../api/getItems';
+import ItemList from './component';
+import {
+  getItemsRequest,
+  getItemsResponse,
+  getItemsResponseFail,
+} from '../../actions';
+import getItemsFromJSON from '../../api/getItemsFromJSON';
+
+const getItems = () => async dispatch => {
+  try {
+    dispatch(getItemsRequest());
+
+    const response = await getItemsFromJSON();
+
+    dispatch(getItemsResponse(response));
+  } catch (error) {
+    dispatch(getItemsResponseFail(error));
+
+    throw new Error(error);
+  }
+};
 
 const mapStateToProps = state => ({
   items: state.items,
@@ -10,11 +28,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  handleGetItems: async () => {
-    dispatch(getItemsRequest());
-    await getItems(dispatch);
-  }
+  handleGetItems: async () => dispatch(getItems()),
 });
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps,

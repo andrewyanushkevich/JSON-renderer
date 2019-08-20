@@ -26,12 +26,12 @@ const filterItems = (items, filter) => {
       shareCommonElements(elem.size, filter.sizes)
     );
   });
-  if (filter.priceSort === "increasing") {
+  if (filter.priceSort === 'increasing') {
     filtered.sort((elem1, elem2) => elem1.price - elem2.price);
   } else {
     filtered.sort((elem1, elem2) => elem2.price - elem1.price);
   }
-  if (filter.ratingSort === "increasing") {
+  if (filter.ratingSort === 'increasing') {
     filtered.sort((elem1, elem2) => elem1.rating - elem2.rating);
   } else {
     filtered.sort((elem1, elem2) => elem2.rating - elem1.rating);

@@ -8,7 +8,9 @@
     "plugins": ["react", "prettier"],
     "settings": {
         "import/resolver": {
-          "alias": ["src", "./src/"]
+          "alias": [
+            ["src", "./src/"]
+          ],
         }
     },
     "rules": {

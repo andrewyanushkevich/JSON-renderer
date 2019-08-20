@@ -1,8 +1,8 @@
-import * as actions from "../constants";
+import * as actions from '../constants';
 
 const initialState = {
   items: [],
-  filter: []
+  filter: [],
 };
 
 const reducer = (state = initialState, action) => {
