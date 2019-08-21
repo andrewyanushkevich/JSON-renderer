@@ -1,4 +1,4 @@
-import * as actions from '../../constants';
+import * as actions from 'constants/actions';
 
 export const getItemsRequest = () => ({
   type: actions.GET_ITEMS_REQUEST,
@@ -14,7 +14,17 @@ export const getItemsResponseFail = error => ({
   error,
 });
 
-export const filterItems = filter => ({
+export const filterShapeCreated = shape => ({
+  type: actions.FILTER_SHAPE_CREATED,
+  shape,
+});
+
+export const filterItems = selected => ({
   type: actions.FILTER_ITEMS,
-  filter,
+  selected,
+});
+
+export const sortOrderSelected = order => ({
+  type: actions.SORT_ORDER_SELECTED,
+  order,
 });

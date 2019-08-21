@@ -1,12 +1,14 @@
 import React from 'react';
 
 import ItemList from './components/ItemList';
+import SortBar from './components/SortBar';
 
 import { StyledDiv } from './styles';
 
 const Home = () => {
   return (
     <StyledDiv>
+      <SortBar />
       <ItemList />
     </StyledDiv>
   );

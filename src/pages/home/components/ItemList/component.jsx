@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { List } from 'antd';
 import PropTypes from 'prop-types';
 
@@ -6,7 +6,7 @@ import Item from 'pages/home/components/Item';
 
 import { StyledList } from './styles';
 
-class ItemList extends Component {
+class ItemList extends PureComponent {
   componentDidMount() {
     const { handleGetItems } = this.props;
     handleGetItems();
