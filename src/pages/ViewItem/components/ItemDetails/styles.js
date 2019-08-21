@@ -27,8 +27,8 @@ export const TagsWrapper = styled.div`
 `;
 
 export const RatingWrapper = styled.div`
-  margin: 20px 40%;
-  width: 200px;
+  margin: 20px 45%;
+  width: 10%;
   @media only screen and (max-width: 600px) {
     margin: 0 200px;
   }

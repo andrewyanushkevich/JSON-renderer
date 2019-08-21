@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Form, InputNumber, Checkbox, Select, Radio, Button } from 'antd';
 import PropTypes from 'prop-types';
 
-import { SIZES, TAGS, COLORS } from '../../constants';
+import { SIZES, TAGS, COLORS } from 'constants';
 import { StyledFilter } from './styles';
 
 class Filter extends Component {

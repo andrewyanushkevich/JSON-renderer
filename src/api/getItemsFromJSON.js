@@ -1,11 +1,8 @@
-import { API_URL } from '../constants';
+import { API_URL } from 'constants/api';
 
 const getItems = async () => {
   try {
-    return await fetch(API_URL, {
-      method: 'GET',
-      headers: { 'Accept-Encoding': 'gzip' },
-    }).then(response => {
+    return await fetch(API_URL).then(response => {
       return response.json();
     });
   } catch (err) {

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ItemView from '../../blocks/ItemView';
+import ItemDetails from './components/ItemDetails';
 
 const ViewItem = () => {
-  return <ItemView />;
+  return <ItemDetails />;
 };
 
 export default ViewItem;

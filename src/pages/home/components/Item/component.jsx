@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
-import Rating from 'material-ui-rating';
+import Rating from 'blocks/Rating';
 import { Tag } from 'antd';
 
 import {
@@ -36,7 +36,7 @@ class Item extends Component {
               })}
             </TagsWrapper>
             <RatingWrapper>
-              <Rating value={item.rating} readOnly />
+              <Rating stars={item.rating} totalStars={5} />
             </RatingWrapper>
           </div>
           <div>
