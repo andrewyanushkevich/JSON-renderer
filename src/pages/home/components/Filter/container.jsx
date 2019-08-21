@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { filterItems } from '../../actions';
+import { filterItems } from 'store/actions';
 import WrappedFilter from './component';
 
 const mapDispatchToProps = dispatch => ({

@@ -5,8 +5,8 @@ import {
   getItemsRequest,
   getItemsResponse,
   getItemsResponseFail,
-} from '../../actions';
-import getItemsFromJSON from '../../api/getItemsFromJSON';
+} from '../../../../store/actions';
+import getItemsFromJSON from '../../../../api/getItemsFromJSON';
 
 const getItems = () => async dispatch => {
   try {
@@ -23,8 +23,7 @@ const getItems = () => async dispatch => {
 };
 
 const mapStateToProps = state => ({
-  items: state.items,
-  filter: state.filter,
+  items: state.items.items,
 });
 
 const mapDispatchToProps = dispatch => ({

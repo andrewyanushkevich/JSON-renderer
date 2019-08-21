@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { List } from 'antd';
 import PropTypes from 'prop-types';
 
-import Item from '../Item';
+import Item from 'pages/home/components/Item';
 
 import { StyledList } from './styles';
 

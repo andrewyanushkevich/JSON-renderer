@@ -1,4 +1,4 @@
-import * as actions from '../constants';
+import * as actions from '../../constants';
 
 export const getItemsRequest = () => ({
   type: actions.GET_ITEMS_REQUEST,

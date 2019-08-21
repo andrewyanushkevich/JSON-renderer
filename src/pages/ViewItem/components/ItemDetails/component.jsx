@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Carousel, Tag } from 'antd';
-import Rating from 'material-ui-rating';
+import Rating from 'blocks/Rating';
 
 import {
   StyledItem,
@@ -15,7 +15,7 @@ import {
   Price,
 } from './styles';
 
-class ItemView extends Component {
+class ItemDetails extends Component {
   constructor(props) {
     super(props);
 
@@ -54,7 +54,7 @@ class ItemView extends Component {
         </TagsWrapper>
         <div>
           <RatingWrapper>
-            <Rating value={item.rating} readOnly />
+            <Rating stars={item.rating} totalStars={5} />
           </RatingWrapper>
           <p>{item.description}</p>
         </div>
@@ -66,7 +66,7 @@ class ItemView extends Component {
   }
 }
 
-ItemView.propTypes = {
+ItemDetails.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.shape({
@@ -84,4 +84,4 @@ ItemView.propTypes = {
   ).isRequired,
 };
 
-export default withRouter(ItemView);
+export default withRouter(ItemDetails);

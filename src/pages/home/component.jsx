@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ItemList from '../../blocks/ItemList';
+import ItemList from './components/ItemList';
 
 import { StyledDiv } from './styles';
 
