@@ -31,9 +31,9 @@ class Item extends Component {
           <div>
             <Img srcSet={item.images[0]} />
             <TagsWrapper>
-              {item.color.map(elem => {
-                return <Tag color={elem}>{elem}</Tag>;
-              })}
+              {item.color.map(elem => (
+                <Tag color={elem}>{elem}</Tag>
+              ))}
             </TagsWrapper>
             <RatingWrapper>
               <Rating stars={item.rating} totalStars={5} />

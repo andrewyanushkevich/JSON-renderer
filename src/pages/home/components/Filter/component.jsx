@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Form, InputNumber, Checkbox, Select, Radio, Button } from 'antd';
 import PropTypes from 'prop-types';
 
-import { SIZES, TAGS, COLORS } from 'constants';
 import { StyledFilter } from './styles';
 
 class Filter extends Component {
@@ -18,7 +17,7 @@ class Filter extends Component {
   };
 
   render() {
-    const { form } = this.props;
+    const { form, shape } = this.props;
     const { getFieldDecorator } = form;
     return (
       <StyledFilter>
@@ -32,7 +31,7 @@ class Filter extends Component {
           <Form.Item label="Rating" labelAlign="right">
             <span>from</span>
             {getFieldDecorator('minRating')(
-              <InputNumber min={0} max={5} step={0.5} />,
+              <InputNumber min={0} max={shape.rating.max} step={0.5} />,
             )}
             <span>to</span>
             {getFieldDecorator('maxRating')(
@@ -42,7 +41,7 @@ class Filter extends Component {
           <Form.Item label="Sizes">
             {getFieldDecorator('sizes')(
               <Checkbox.Group
-                options={SIZES.map(elem => {
+                options={shape.sizes.map(elem => {
                   return { label: elem, value: elem };
                 })}
               ></Checkbox.Group>,
@@ -51,7 +50,7 @@ class Filter extends Component {
           <Form.Item label="Tags">
             {getFieldDecorator('tags')(
               <Select mode="tags">
-                {TAGS.map(elem => {
+                {shape.tags.map(elem => {
                   return <Select.Option key={elem}>{elem}</Select.Option>;
                 })}
               </Select>,
@@ -60,7 +59,7 @@ class Filter extends Component {
           <Form.Item label="Colors">
             {getFieldDecorator('colors')(
               <Select mode="tags">
-                {COLORS.map(elem => {
+                {shape.colors.map(elem => {
                   return <Select.Option key={elem}>{elem}</Select.Option>;
                 })}
               </Select>,
