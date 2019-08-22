@@ -15,17 +15,15 @@ const filterItems = (items, filter) => {
   const maxPrice = filter.maxPrice || Number.MAX_VALUE;
   const minRating = filter.minRating || 0;
   const maxRating = filter.maxRating || 5;
-  const filtered = items.filter(elem => {
-    return (
-      elem.price >= minPrice &&
-      elem.price <= maxPrice &&
-      elem.rating >= minRating &&
-      elem.rating <= maxRating &&
-      shareCommonElements(elem.tags, filter.tags) &&
-      shareCommonElements(elem.color, filter.colors) &&
-      shareCommonElements(elem.size, filter.sizes)
-    );
-  });
+  const filtered = items.filter((elem) => (
+    elem.price >= minPrice
+      && elem.price <= maxPrice
+      && elem.rating >= minRating
+      && elem.rating <= maxRating
+      && shareCommonElements(elem.tags, filter.tags)
+      && shareCommonElements(elem.color, filter.colors)
+      && shareCommonElements(elem.size, filter.sizes)
+  ));
   return filtered;
 };
 

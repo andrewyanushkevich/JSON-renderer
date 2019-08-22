@@ -1,3 +1,4 @@
+/* eslint-disable react/state-in-constructor */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
@@ -16,18 +17,18 @@ import {
 } from './styles';
 
 class ItemDetails extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      item: undefined,
-    };
-  }
+  state = {
+    item: undefined,
+  };
 
   componentDidMount() {
-    const { items, match } = this.props;
-    const { id } = match.params;
-    const item = items.find(elem => elem._id.$oid === id);
+    const {
+      items,
+      match: {
+        params: { id },
+      },
+    } = this.props;
+    const item = items.find((elem) => elem._id.$oid === id);
     this.setState({
       item,
     });
@@ -38,19 +39,15 @@ class ItemDetails extends Component {
     return item ? (
       <StyledItem>
         <Title>{item.title}</Title>
-        <Carousel autoplay speed={0.2}>
-          {item.images.map(elem => {
-            return (
-              <div>
-                <Img srcSet={elem} />
-              </div>
-            );
-          })}
+        <Carousel autoplay>
+          {item.images.map((elem) => (
+            <>
+              <Img srcSet={elem} />
+            </>
+          ))}
         </Carousel>
         <TagsWrapper>
-          {item.color.map(elem => {
-            return <Tag color={elem}>{elem}</Tag>;
-          })}
+          {item.color.map((elem) => <Tag color={elem}>{elem}</Tag>)}
         </TagsWrapper>
         <div>
           <RatingWrapper>
@@ -59,7 +56,11 @@ class ItemDetails extends Component {
           <p>{item.description}</p>
         </div>
         <div>
-          <Price>Price: {item.price}$</Price>
+          <Price>
+            Price:
+            {item.price}
+            $
+          </Price>
         </div>
       </StyledItem>
     ) : null;

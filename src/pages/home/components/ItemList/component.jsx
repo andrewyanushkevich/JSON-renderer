@@ -19,7 +19,7 @@ class ItemList extends PureComponent {
         <List
           dataSource={items}
           split={false}
-          renderItem={item => (
+          renderItem={(item) => (
             <List.Item>
               <Item item={item} />
             </List.Item>

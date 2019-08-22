@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import { Form, InputNumber, Checkbox, Select, Radio, Button } from 'antd';
+import {
+  Form, InputNumber, Checkbox, Select, Radio, Button
+} from 'antd';
 import PropTypes from 'prop-types';
 
 import { StyledFilter } from './styles';
 
 class Filter extends Component {
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     const { filter, form } = this.props;
     e.preventDefault();
     form.validateFields((err, values) => {
@@ -41,27 +43,22 @@ class Filter extends Component {
           <Form.Item label="Sizes">
             {getFieldDecorator('sizes')(
               <Checkbox.Group
-                options={shape.sizes.map(elem => {
-                  return { label: elem, value: elem };
-                })}
-              ></Checkbox.Group>,
+                options={shape.sizes.map((elem) => ({ label: elem, value: elem }))}
+              >
+              </Checkbox.Group>,
             )}
           </Form.Item>
           <Form.Item label="Tags">
             {getFieldDecorator('tags')(
               <Select mode="tags">
-                {shape.tags.map(elem => {
-                  return <Select.Option key={elem}>{elem}</Select.Option>;
-                })}
+                {shape.tags.map((elem) => <Select.Option key={elem}>{elem}</Select.Option>)}
               </Select>,
             )}
           </Form.Item>
           <Form.Item label="Colors">
             {getFieldDecorator('colors')(
               <Select mode="tags">
-                {shape.colors.map(elem => {
-                  return <Select.Option key={elem}>{elem}</Select.Option>;
-                })}
+                {shape.colors.map((elem) => <Select.Option key={elem}>{elem}</Select.Option>)}
               </Select>,
             )}
           </Form.Item>

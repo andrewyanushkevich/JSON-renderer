@@ -2,8 +2,6 @@ import React from 'react';
 
 import ItemDetails from './components/ItemDetails';
 
-const ViewItem = () => {
-  return <ItemDetails />;
-};
+const itemPage = () => <ItemDetails />;
 
-export default ViewItem;
+export default itemPage;

@@ -31,7 +31,7 @@ class Item extends Component {
           <div>
             <Img srcSet={item.images[0]} />
             <TagsWrapper>
-              {item.color.map(elem => (
+              {item.color.map((elem) => (
                 <Tag color={elem}>{elem}</Tag>
               ))}
             </TagsWrapper>
@@ -40,7 +40,10 @@ class Item extends Component {
             </RatingWrapper>
           </div>
           <div>
-            <Price>{item.price}$</Price>
+            <Price>
+              {item.price}
+              $
+            </Price>
           </div>
         </div>
       </StyledItem>
