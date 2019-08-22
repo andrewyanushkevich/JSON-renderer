@@ -27,9 +27,9 @@ export const filterShapeCreated = shape => {
   };
 };
 
-export const filterItems = selected => {
+export const selectedFilter = selected => {
   return {
-    type: actions.FILTER_ITEMS,
+    type: actions.SELECTED_FILTER,
     selected,
   };
 };

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { filterItems } from 'store/actions';
+import { selectedFilter } from 'store/actions';
 import WrappedFilter from './component';
 
 const mapStateToProps = state => {
@@ -11,8 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    filter: filter => {
-      return dispatch(filterItems(filter));
+    handleFilterChange: selected => {
+      return dispatch(selectedFilter(selected));
     },
   };
 };

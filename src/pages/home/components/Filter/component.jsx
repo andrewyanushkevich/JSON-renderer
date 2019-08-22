@@ -1,27 +1,38 @@
+/* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prop-types */
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Form, Checkbox, Slider } from 'antd';
 import PropTypes from 'prop-types';
 
 import Rating from 'blocks/Rating';
 import { StyledFilter } from './styles';
 
-class Filter extends Component {
+class Filter extends PureComponent {
+  state = {
+    price: { min: 0, max: Number.MAX_VALUE },
+    ratings: [1, 2, 3, 4, 5],
+    colors: [],
+    sizes: [],
+    tags: [],
+  };
+
   componentDidUpdate() {
-    const { filter } = this.props;
-    filter(this.state);
+    const { handleFilterChange } = this.props;
+    handleFilterChange(this.state);
   }
 
   handleChangePrice = e => {
     this.setState({
-      minPrice: e[0],
-      maxPrice: e[1],
+      price: {
+        min: e[0],
+        max: e[1],
+      },
     });
   };
 
   handleChangeRating = e => {
     this.setState({
-      rating: e,
+      ratings: e,
     });
   };
 
@@ -122,7 +133,7 @@ class Filter extends Component {
           <Form.Item label="Colors">
             {getFieldDecorator('colors')(
               <Checkbox.Group
-                onChange={this.handleChangeTags}
+                onChange={this.handleChangeColors}
                 options={shape.colors.map(elem => {
                   return {
                     label: elem,

@@ -18,7 +18,7 @@ const getStars = (totalCount, activeCount) => {
 
 const Rating = props => {
   const { stars, totalStars } = props;
-  const starsArray = getStars(totalStars, stars);
+  const starsArray = getStars(totalStars, Math.round(stars));
 
   return (
     <div>

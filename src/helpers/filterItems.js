@@ -1,29 +1,34 @@
 const shareCommonElements = (arr1, arr2) => {
-  if (!arr1 || !arr2) {
+  if (arr1.length === 0 || arr2.length === 0) {
     return true;
   }
-  for (let i = 0; i < arr1.length; i += 1) {
-    for (let j = 0; j < arr2.length; j += 1) {
-      if (arr1[i] === arr2[j]) return true;
-    }
-  }
-  return false;
+
+  const res = arr1.filter(elem => {
+    return arr2.includes(elem);
+  });
+
+  return res.length === 0;
 };
 
-const filterItems = (items, filter) => {
-  const minPrice = filter.minPrice || 0;
-  const maxPrice = filter.maxPrice || Number.MAX_VALUE;
-  const minRating = filter.minRating || 0;
-  const maxRating = filter.maxRating || 5;
+const filterItemsOnRating = (item, ratings) => {
+  return (
+    ratings.some(elem => {
+      return Math.round(item.rating) === elem;
+    }) || ratings.length === 0
+  );
+};
+
+const filterItems = (items, selectedFilter) => {
+  const price = selectedFilter.price || { min: 0, max: Number.MAX_VALUE };
+  const { min, max } = price;
   const filtered = items.filter(elem => {
     return (
-      elem.price >= minPrice &&
-      elem.price <= maxPrice &&
-      elem.rating >= minRating &&
-      elem.rating <= maxRating &&
-      shareCommonElements(elem.tags, filter.tags) &&
-      shareCommonElements(elem.color, filter.colors) &&
-      shareCommonElements(elem.size, filter.sizes)
+      elem.price >= min &&
+      elem.price <= max &&
+      filterItemsOnRating(elem, selectedFilter.ratings) &&
+      shareCommonElements(elem.tags, selectedFilter.tags) &&
+      shareCommonElements(elem.color, selectedFilter.colors) &&
+      shareCommonElements(elem.size, selectedFilter.sizes)
     );
   });
   return filtered;

@@ -8,6 +8,7 @@ import {
 } from 'store/actions';
 
 import createFilterShape from 'helpers/createFiltersShape';
+import filterItems from 'helpers/filterItems';
 import sortItems from 'helpers/sortItems';
 import getItemsFromJSON from 'api/getItemsFromJSON';
 import ItemList from './component';
@@ -31,7 +32,7 @@ const getItems = () => {
 };
 
 const getFilteredAndSortedItems = (items, filter, sortOrder) => {
-  return sortItems([...items], sortOrder);
+  return sortItems(filterItems([...items], filter), sortOrder);
 };
 
 const mapStateToProps = state => {

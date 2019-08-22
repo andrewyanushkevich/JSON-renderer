@@ -9,7 +9,7 @@ const filterReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.FILTER_SHAPE_CREATED:
       return { ...state, shape: action.shape };
-    case actions.FILTER_ITEMS:
+    case actions.SELECTED_FILTER:
       return { ...state, selected: action.selected };
     default:
       return state;
