@@ -9,16 +9,18 @@ import store from './store/store';
 import Home from './pages/home';
 import itemPage from './pages/itemPage';
 
-const App = () => (
-  <BrowserRouter>
-    <Provider store={store}>
-      <ScrollMemory />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/:id" component={itemPage} />
-      </Switch>
-    </Provider>
-  </BrowserRouter>
-);
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Provider store={store}>
+        <ScrollMemory />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/:id" component={itemPage} />
+        </Switch>
+      </Provider>
+    </BrowserRouter>
+  );
+};
 
 export default App;

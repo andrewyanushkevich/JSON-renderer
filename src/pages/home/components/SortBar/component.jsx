@@ -6,7 +6,7 @@ import { Select } from 'antd';
 import SortBarWrapper from './styles';
 
 class SortBar extends Component {
-  handleChange = (value) => {
+  handleChange = value => {
     const { handleSetSortOrder } = this.props;
     handleSetSortOrder(value);
   };

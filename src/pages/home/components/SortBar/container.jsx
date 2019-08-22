@@ -4,9 +4,13 @@ import { sortOrderSelected } from 'store/actions';
 
 import SortBar from './component';
 
-const mapDispatchToProps = (dispatch) => ({
-  handleSetSortOrder: (order) => dispatch(sortOrderSelected(order)),
-});
+const mapDispatchToProps = dispatch => {
+  return {
+    handleSetSortOrder: order => {
+      return dispatch(sortOrderSelected(order));
+    },
+  };
+};
 
 export default connect(
   null,

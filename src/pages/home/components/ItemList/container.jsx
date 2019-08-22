@@ -12,35 +12,45 @@ import sortItems from 'helpers/sortItems';
 import getItemsFromJSON from 'api/getItemsFromJSON';
 import ItemList from './component';
 
-const getItems = () => async (dispatch) => {
-  try {
-    dispatch(getItemsRequest());
+const getItems = () => {
+  return async dispatch => {
+    try {
+      dispatch(getItemsRequest());
 
-    const response = await getItemsFromJSON();
-    const filterShape = createFilterShape(response);
+      const response = await getItemsFromJSON();
+      const filterShape = createFilterShape(response);
 
-    dispatch(filterShapeCreated(filterShape));
-    dispatch(getItemsResponse(response));
-  } catch (error) {
-    dispatch(getItemsResponseFail(error));
+      dispatch(filterShapeCreated(filterShape));
+      dispatch(getItemsResponse(response));
+    } catch (error) {
+      dispatch(getItemsResponseFail(error));
 
-    throw new Error(error);
-  }
+      throw new Error(error);
+    }
+  };
 };
 
-const getFilteredAndSortedItems = (items, filter, sortOrder) => sortItems([...items], sortOrder);
+const getFilteredAndSortedItems = (items, filter, sortOrder) => {
+  return sortItems([...items], sortOrder);
+};
 
-const mapStateToProps = (state) => ({
-  items: getFilteredAndSortedItems(
-    state.product.items,
-    state.filters.selected,
-    state.sort.order,
-  ),
-});
+const mapStateToProps = state => {
+  return {
+    items: getFilteredAndSortedItems(
+      state.product.items,
+      state.filters.selected,
+      state.sort.order,
+    ),
+  };
+};
 
-const mapDispatchToProps = (dispatch) => ({
-  handleGetItems: () => dispatch(getItems()),
-});
+const mapDispatchToProps = dispatch => {
+  return {
+    handleGetItems: () => {
+      return dispatch(getItems());
+    },
+  };
+};
 
 export default connect(
   mapStateToProps,

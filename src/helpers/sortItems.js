@@ -1,8 +1,14 @@
-const sortPriceMinMax = (item1, item2) => item1.price - item2.price;
+const sortPriceMinMax = (item1, item2) => {
+  return item1.price - item2.price;
+};
 
-const sortPriceMaxMin = (item1, item2) => item2.price - item1.price;
+const sortPriceMaxMin = (item1, item2) => {
+  return item2.price - item1.price;
+};
 
-const sortRating = (item1, item2) => item2.rating - item1.rating;
+const sortRating = (item1, item2) => {
+  return item2.rating - item1.rating;
+};
 
 const sortItems = (items, sortOrder) => {
   switch (sortOrder) {

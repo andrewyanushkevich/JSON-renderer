@@ -3,13 +3,19 @@ import { connect } from 'react-redux';
 import { filterItems } from 'store/actions';
 import WrappedFilter from './component';
 
-const mapStateToProps = (state) => ({
-  shape: state.filters.shape,
-});
+const mapStateToProps = state => {
+  return {
+    shape: state.filters.shape,
+  };
+};
 
-const mapDispatchToProps = (dispatch) => ({
-  filter: (filter) => dispatch(filterItems(filter)),
-});
+const mapDispatchToProps = dispatch => {
+  return {
+    filter: filter => {
+      return dispatch(filterItems(filter));
+    },
+  };
+};
 
 export default connect(
   mapStateToProps,

@@ -28,7 +28,9 @@ class ItemDetails extends Component {
         params: { id },
       },
     } = this.props;
-    const item = items.find((elem) => elem._id.$oid === id);
+    const item = items.find(elem => {
+      return elem._id.$oid === id;
+    });
     this.setState({
       item,
     });
@@ -40,14 +42,18 @@ class ItemDetails extends Component {
       <StyledItem>
         <Title>{item.title}</Title>
         <Carousel autoplay>
-          {item.images.map((elem) => (
-            <>
-              <Img srcSet={elem} />
-            </>
-          ))}
+          {item.images.map(elem => {
+            return (
+              <>
+                <Img srcSet={elem} />
+              </>
+            );
+          })}
         </Carousel>
         <TagsWrapper>
-          {item.color.map((elem) => <Tag color={elem}>{elem}</Tag>)}
+          {item.color.map(elem => {
+            return <Tag color={elem}>{elem}</Tag>;
+          })}
         </TagsWrapper>
         <div>
           <RatingWrapper>
@@ -58,8 +64,7 @@ class ItemDetails extends Component {
         <div>
           <Price>
             Price:
-            {item.price}
-            $
+            {item.price}$
           </Price>
         </div>
       </StyledItem>

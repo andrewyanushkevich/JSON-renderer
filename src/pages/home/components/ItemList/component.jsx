@@ -19,11 +19,13 @@ class ItemList extends PureComponent {
         <List
           dataSource={items}
           split={false}
-          renderItem={(item) => (
-            <List.Item>
-              <Item item={item} />
-            </List.Item>
-          )}
+          renderItem={item => {
+            return (
+              <List.Item>
+                <Item item={item} />
+              </List.Item>
+            );
+          }}
           pagination={{
             defaultCurrent: 1,
             position: 'both',
