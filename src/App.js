@@ -7,20 +7,18 @@ import 'antd/dist/antd.css';
 
 import store from './store/store';
 import Home from './pages/home';
-import ViewItem from './pages/ViewItem';
+import itemPage from './pages/itemPage';
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Provider store={store}>
-        <ScrollMemory />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/:id" component={ViewItem} />
-        </Switch>
-      </Provider>
-    </BrowserRouter>
-  );
-};
+const App = () => (
+  <BrowserRouter>
+    <Provider store={store}>
+      <ScrollMemory />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/:id" component={itemPage} />
+      </Switch>
+    </Provider>
+  </BrowserRouter>
+);
 
 export default App;

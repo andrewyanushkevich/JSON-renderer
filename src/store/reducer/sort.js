@@ -1,16 +1,16 @@
 import * as actions from 'constants/actions';
 
+import SORTS from 'constants/sorts';
+
 const initialState = {
-  order: 'price_min_max',
+  order: SORTS[0],
 };
 
 const filterReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case actions.SORT_ORDER_SELECTED:
-      return { ...state, order: action.order };
-    default:
-      return state;
+  if (action.type === actions.SORT_ORDER_SELECTED) {
+    return { ...state, order: action.order };
   }
+  return state;
 };
 
 export default filterReducer;

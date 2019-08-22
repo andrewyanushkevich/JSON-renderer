@@ -5,13 +5,11 @@ import SortBar from './components/SortBar';
 
 import { StyledDiv } from './styles';
 
-const Home = () => {
-  return (
-    <StyledDiv>
-      <SortBar />
-      <ItemList />
-    </StyledDiv>
-  );
-};
+const Home = () => (
+  <StyledDiv>
+    <SortBar />
+    <ItemList />
+  </StyledDiv>
+);
 
 export default Home;

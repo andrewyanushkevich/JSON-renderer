@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { sorts } from 'constants/api';
+import SORTS from 'constants/sorts';
 import { Select } from 'antd';
 import SortBarWrapper from './styles';
 
 class SortBar extends Component {
-  handleChange = value => {
+  handleChange = (value) => {
     const { handleSetSortOrder } = this.props;
     handleSetSortOrder(value);
   };
@@ -15,9 +15,9 @@ class SortBar extends Component {
     return (
       <SortBarWrapper>
         <Select defaultValue="cheap" onChange={this.handleChange}>
-          <Select.Option value={sorts[0].id}>cheap</Select.Option>
-          <Select.Option value={sorts[1].id}>expensive</Select.Option>
-          <Select.Option value={sorts[2].id}>rating</Select.Option>
+          <Select.Option value={SORTS[0].id}>cheap</Select.Option>
+          <Select.Option value={SORTS[1].id}>expensive</Select.Option>
+          <Select.Option value={SORTS[2].id}>rating</Select.Option>
         </Select>
       </SortBarWrapper>
     );

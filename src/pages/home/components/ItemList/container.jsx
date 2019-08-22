@@ -12,7 +12,7 @@ import sortItems from 'helpers/sortItems';
 import getItemsFromJSON from 'api/getItemsFromJSON';
 import ItemList from './component';
 
-const getItems = () => async dispatch => {
+const getItems = () => async (dispatch) => {
   try {
     dispatch(getItemsRequest());
 
@@ -28,11 +28,9 @@ const getItems = () => async dispatch => {
   }
 };
 
-const getFilteredAndSortedItems = (items, filter, sortOrder) => {
-  return sortItems([...items], sortOrder);
-};
+const getFilteredAndSortedItems = (items, filter, sortOrder) => sortItems([...items], sortOrder);
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   items: getFilteredAndSortedItems(
     state.product.items,
     state.filters.selected,
@@ -40,8 +38,8 @@ const mapStateToProps = state => ({
   ),
 });
 
-const mapDispatchToProps = dispatch => ({
-  handleGetItems: async () => dispatch(getItems()),
+const mapDispatchToProps = (dispatch) => ({
+  handleGetItems: () => dispatch(getItems()),
 });
 
 export default connect(

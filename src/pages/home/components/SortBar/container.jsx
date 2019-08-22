@@ -4,8 +4,8 @@ import { sortOrderSelected } from 'store/actions';
 
 import SortBar from './component';
 
-const mapDispatchToProps = dispatch => ({
-  handleSetSortOrder: order => dispatch(sortOrderSelected(order)),
+const mapDispatchToProps = (dispatch) => ({
+  handleSetSortOrder: (order) => dispatch(sortOrderSelected(order)),
 });
 
 export default connect(

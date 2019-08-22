@@ -16,19 +16,17 @@ const getStars = (totalCount, activeCount) => {
   return stars;
 };
 
-const Rating = props => {
+const Rating = (props) => {
   const { stars, totalStars } = props;
   const starsArray = getStars(totalStars, stars);
 
   return (
     <div>
-      {starsArray.map(elem =>
-        elem.active ? (
-          <FontAwesomeIcon icon={faStar} color="orange" />
-        ) : (
-          <FontAwesomeIcon icon={faStar} color="lightgray" />
-        ),
-      )}
+      {starsArray.map((elem) => (elem.active ? (
+        <FontAwesomeIcon icon={faStar} color="orange" />
+      ) : (
+        <FontAwesomeIcon icon={faStar} color="lightgray" />
+      )),)}
     </div>
   );
 };
