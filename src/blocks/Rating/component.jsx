@@ -24,9 +24,9 @@ const Rating = props => {
     <div>
       {starsArray.map(elem => {
         return elem.active ? (
-          <FontAwesomeIcon icon={faStar} color="orange" />
+          <FontAwesomeIcon icon={faStar} color="orange" key={elem.id} />
         ) : (
-          <FontAwesomeIcon icon={faStar} color="lightgray" />
+          <FontAwesomeIcon icon={faStar} color="lightgray" key={elem.id} />
         );
       })}
     </div>

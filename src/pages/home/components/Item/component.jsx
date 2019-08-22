@@ -32,7 +32,11 @@ class Item extends Component {
             <Img srcSet={item.images[0]} />
             <TagsWrapper>
               {item.color.map(elem => {
-                return <Tag color={elem}>{elem}</Tag>;
+                return (
+                  <Tag color={elem} key={elem}>
+                    {elem}
+                  </Tag>
+                );
               })}
             </TagsWrapper>
             <RatingWrapper>

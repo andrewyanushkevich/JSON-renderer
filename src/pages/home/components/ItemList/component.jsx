@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import React, { PureComponent } from 'react';
 import { List } from 'antd';
 import PropTypes from 'prop-types';
@@ -12,6 +13,13 @@ class ItemList extends PureComponent {
     handleGetItems();
   }
 
+  handlePageChange = () => {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: 0,
+    });
+  };
+
   render() {
     const { items } = this.props;
     return (
@@ -21,7 +29,7 @@ class ItemList extends PureComponent {
           split={false}
           renderItem={item => {
             return (
-              <List.Item>
+              <List.Item key={item._id.$oid}>
                 <Item item={item} />
               </List.Item>
             );
@@ -32,6 +40,7 @@ class ItemList extends PureComponent {
             total: items.length,
             hideOnSinglePage: true,
             pageSize: 5,
+            onChange: this.handlePageChange,
           }}
         />
       </StyledList>
