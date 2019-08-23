@@ -7,7 +7,7 @@ const shareCommonElements = (arr1, arr2) => {
     return arr2.includes(elem);
   });
 
-  return res.length === 0;
+  return res.length !== 0;
 };
 
 const filterItemsOnRating = (item, ratings) => {
@@ -21,7 +21,7 @@ const filterItemsOnRating = (item, ratings) => {
 const filterItems = (items, selectedFilter) => {
   const price = selectedFilter.price || { min: 0, max: Number.MAX_VALUE };
   const { min, max } = price;
-  const filtered = items.filter(elem => {
+  return items.filter(elem => {
     return (
       elem.price >= min &&
       elem.price <= max &&
@@ -31,7 +31,6 @@ const filterItems = (items, selectedFilter) => {
       shareCommonElements(elem.size, selectedFilter.sizes)
     );
   });
-  return filtered;
 };
 
 export default filterItems;

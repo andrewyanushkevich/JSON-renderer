@@ -2,17 +2,21 @@ import styled from 'styled-components';
 
 export const Title = styled.h2`
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
+  flex-basis: 200px;
 `;
 
 export const StyledItem = styled.div`
-  width: 60%;
   height: 30%;
-  margin: 10%;
-  & > div {
+  & > div,
+  h2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   @media only screen and (max-width: 600px) {
     width: 100%;
@@ -23,25 +27,25 @@ export const StyledItem = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 250px;
-  height: 250px;
-  margin-right: 50px;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    height: 100%;
-  }
+  width: 150px;
+  height: 150px;
+  margin: auto;
 `;
 
 export const TagsWrapper = styled.div`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 `;
 
 export const RatingWrapper = styled.div`
-  margin: auto;
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const Price = styled.em`
-  font-size: 24px;
+  font-size: 18px;
   width: 50px;
 `;

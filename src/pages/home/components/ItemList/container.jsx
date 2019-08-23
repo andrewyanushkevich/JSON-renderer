@@ -20,7 +20,6 @@ const getItems = () => {
 
       const response = await getItemsFromJSON();
       const filterShape = createFilterShape(response);
-
       dispatch(filterShapeCreated(filterShape));
       dispatch(getItemsResponse(response));
     } catch (error) {
@@ -42,6 +41,7 @@ const mapStateToProps = state => {
       state.filters.selected,
       state.sort.order,
     ),
+    loading: state.product.loading,
   };
 };
 

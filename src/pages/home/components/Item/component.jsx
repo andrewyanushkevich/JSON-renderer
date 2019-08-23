@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactRouterPropTypes from 'react-router-prop-types';
 import { withRouter } from 'react-router-dom';
 import Rating from 'blocks/Rating';
 import { Tag } from 'antd';
@@ -17,9 +17,13 @@ import {
 
 class Item extends Component {
   handleViewFullItem = () => {
-    const { item, history } = this.props;
-    const id = item._id.$oid;
-    history.push(`/${id}`);
+    const {
+      item: {
+        _id: { $oid },
+      },
+      history,
+    } = this.props;
+    history.push(`/${$oid}`);
   };
 
   render() {
@@ -30,6 +34,12 @@ class Item extends Component {
         <div>
           <div>
             <Img srcSet={item.images[0]} />
+            <RatingWrapper>
+              <Rating stars={item.rating} totalStars={5} />
+            </RatingWrapper>
+          </div>
+          <div>
+            <Price>{item.price}$</Price>
             <TagsWrapper>
               {item.color.map(elem => {
                 return (
@@ -39,12 +49,6 @@ class Item extends Component {
                 );
               })}
             </TagsWrapper>
-            <RatingWrapper>
-              <Rating stars={item.rating} totalStars={5} />
-            </RatingWrapper>
-          </div>
-          <div>
-            <Price>{item.price}$</Price>
           </div>
         </div>
       </StyledItem>
@@ -66,6 +70,7 @@ Item.propTypes = {
     color: PropTypes.arrayOf(PropTypes.string).isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
+  history: ReactRouterPropTypes.history.isRequired,
 };
 
 export default withRouter(Item);

@@ -1,7 +1,7 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prop-types */
 import React, { PureComponent } from 'react';
-import { Form, Checkbox, Slider } from 'antd';
+import { Form, Slider } from 'antd';
 import PropTypes from 'prop-types';
 
 import Rating from 'blocks/Rating';
@@ -75,66 +75,62 @@ class Filter extends PureComponent {
             [shape.price.max]: shape.price.max,
           }}
         />
-        <RatingWrapper>
-          <Checkbox.Group
-            onChange={this.handleChangeRating}
-            options={[
-              {
-                label: <Rating stars={1} totalStars={5} />,
-                value: 1,
-              },
-              {
-                label: <Rating stars={2} totalStars={5} />,
-                value: 2,
-              },
-              {
-                label: <Rating stars={3} totalStars={5} />,
-                value: 3,
-              },
-              {
-                label: <Rating stars={4} totalStars={5} />,
-                value: 4,
-              },
-              {
-                label: <Rating stars={5} totalStars={5} />,
-                value: 5,
-              },
-            ]}
-          ></Checkbox.Group>
-        </RatingWrapper>
-        <SizesWrapper>
-          <Checkbox.Group
-            onChange={this.handleChangeSizes}
-            options={shape.sizes.map(elem => {
-              return {
-                label: elem,
-                value: elem,
-              };
-            })}
-          ></Checkbox.Group>
-        </SizesWrapper>
-        <TagsWrapper>
-          <Checkbox.Group
-            onChange={this.handleChangeTags}
-            options={shape.tags.map(elem => {
-              return {
-                label: elem,
-                value: elem,
-              };
-            })}
-          ></Checkbox.Group>
-        </TagsWrapper>
-        <ColorsWrapper>
-          <Checkbox.Group
-            onChange={this.handleChangeColors}
-            options={shape.colors.map(elem => {
-              return {
-                label: elem,
-                value: elem,
-              };
-            })}
-          ></Checkbox.Group>
-        </ColorsWrapper>
+        <h3>Rating</h3>
+        <RatingWrapper
+          onChange={this.handleChangeRating}
+          options={[
+            {
+              label: <Rating stars={1} totalStars={5} />,
+              value: 1,
+            },
+            {
+              label: <Rating stars={2} totalStars={5} />,
+              value: 2,
+            },
+            {
+              label: <Rating stars={3} totalStars={5} />,
+              value: 3,
+            },
+            {
+              label: <Rating stars={4} totalStars={5} />,
+              value: 4,
+            },
+            {
+              label: <Rating stars={5} totalStars={5} />,
+              value: 5,
+            },
+          ]}
+        />
+        <h3>Sizes</h3>
+        <SizesWrapper
+          onChange={this.handleChangeSizes}
+          options={shape.sizes.map(elem => {
+            return {
+              label: elem,
+              value: elem,
+            };
+          })}
+        />
+        <h3>Tags</h3>
+        <TagsWrapper
+          onChange={this.handleChangeTags}
+          options={shape.tags.map(elem => {
+            return {
+              label: elem,
+              value: elem,
+            };
+          })}
+        />
+        <h3>Colors</h3>
+        <ColorsWrapper
+          onChange={this.handleChangeColors}
+          options={shape.colors.map(elem => {
+            return {
+              label: elem,
+              value: elem,
+            };
+          })}
+        />
       </StyledFilter>
     ) : null;
   }

@@ -9,11 +9,11 @@ import { StyledDiv } from './styles';
 const Home = () => {
   return (
     <StyledDiv>
-      <SortBar />
       <div>
+        <SortBar />
         <ItemList />
-        <Filter />
       </div>
+      <Filter />
     </StyledDiv>
   );
 };

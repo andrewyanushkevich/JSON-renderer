@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import React, { PureComponent } from 'react';
-import { List } from 'antd';
+import { List, Skeleton } from 'antd';
 import PropTypes from 'prop-types';
 
 import Item from 'pages/home/components/Item';
@@ -25,21 +25,32 @@ class ItemList extends PureComponent {
     return (
       <StyledList>
         <List
+          grid={{
+            xs: 1,
+            sm: 2,
+            md: 2,
+            lg: 3,
+            xl: 3,
+            xxl: 6,
+            justify: 'center',
+          }}
           dataSource={items}
           split={false}
           renderItem={item => {
             return (
               <List.Item key={item._id.$oid}>
-                <Item item={item} />
+                <Skeleton loading={false} active avatar>
+                  <Item item={item} />
+                </Skeleton>
               </List.Item>
             );
           }}
           pagination={{
             defaultCurrent: 1,
-            position: 'both',
+            position: 'bottom',
             total: items.length,
             hideOnSinglePage: true,
-            pageSize: 5,
+            pageSize: 9,
             onChange: this.handlePageChange,
           }}
         />

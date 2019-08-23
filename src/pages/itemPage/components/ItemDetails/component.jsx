@@ -1,15 +1,18 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable no-underscore-dangle */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import ReactRouterPropTypes from 'react-router-prop-types';
 import PropTypes from 'prop-types';
 import { Carousel, Tag } from 'antd';
+
 import Rating from 'blocks/Rating';
 
 import {
   StyledItem,
   Img,
+  CarouselWrapper,
+  Description,
   Title,
   TagsWrapper,
   RatingWrapper,
@@ -41,31 +44,33 @@ class ItemDetails extends Component {
     return item ? (
       <StyledItem>
         <Title>{item.title}</Title>
-        <Carousel autoplay>
-          {item.images.map(elem => {
-            return (
-              <>
-                <Img srcSet={elem} />
-              </>
-            );
-          })}
-        </Carousel>
-        <TagsWrapper>
-          {item.color.map(elem => {
-            return <Tag color={elem}>{elem}</Tag>;
-          })}
-        </TagsWrapper>
         <div>
-          <RatingWrapper>
-            <Rating stars={item.rating} totalStars={5} />
-          </RatingWrapper>
-          <p>{item.description}</p>
-        </div>
-        <div>
-          <Price>
-            Price:
-            {item.price}$
-          </Price>
+          <CarouselWrapper>
+            <Carousel autoplay>
+              {item.images.map(elem => {
+                return (
+                  <>
+                    <Img srcSet={elem} />
+                  </>
+                );
+              })}
+            </Carousel>
+            <RatingWrapper>
+              <Rating stars={item.rating} totalStars={5} />
+            </RatingWrapper>
+          </CarouselWrapper>
+          <Description>
+            <p>{item.description}</p>
+            <TagsWrapper>
+              {item.color.map(elem => {
+                return <Tag color={elem}>{elem}</Tag>;
+              })}
+            </TagsWrapper>
+            <Price>
+              Price:
+              {` ${item.price}`}$
+            </Price>
+          </Description>
         </div>
       </StyledItem>
     ) : null;
@@ -88,6 +93,7 @@ ItemDetails.propTypes = {
       tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     }).isRequired,
   ).isRequired,
+  match: ReactRouterPropTypes.match.isRequired,
 };
 
 export default withRouter(ItemDetails);
