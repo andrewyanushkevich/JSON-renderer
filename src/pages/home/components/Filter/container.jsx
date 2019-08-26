@@ -6,6 +6,7 @@ import WrappedFilter from './component';
 const mapStateToProps = state => {
   return {
     shape: state.filters.shape,
+    selected: state.filters.selected,
   };
 };
 

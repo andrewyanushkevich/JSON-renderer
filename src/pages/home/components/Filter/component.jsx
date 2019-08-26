@@ -14,13 +14,18 @@ import {
 } from './styles';
 
 class Filter extends PureComponent {
-  state = {
-    price: { min: 0, max: Number.MAX_VALUE },
-    ratings: [1, 2, 3, 4, 5],
-    colors: [],
-    sizes: [],
-    tags: [],
-  };
+  componentDidMount() {
+    const {
+      selected: { price, ratings, tags, colors, sizes },
+    } = this.props;
+    this.setState({
+      price,
+      ratings,
+      tags,
+      colors,
+      sizes,
+    });
+  }
 
   componentDidUpdate() {
     const { handleFilterChange } = this.props;
@@ -61,9 +66,9 @@ class Filter extends PureComponent {
   };
 
   render() {
-    const { shape } = this.props;
+    const { shape, display } = this.props;
     return shape.rating ? (
-      <StyledFilter>
+      <StyledFilter display={display}>
         <Slider
           range
           min={shape.price.min}

@@ -2,7 +2,13 @@ import * as actions from 'constants/actions';
 
 const initialState = {
   shape: {},
-  selected: {},
+  selected: {
+    price: { min: 0, max: Number.MAX_VALUE },
+    ratings: [1, 2, 3, 4, 5],
+    colors: [],
+    sizes: [],
+    tags: [],
+  },
 };
 
 const filterReducer = (state = initialState, action) => {

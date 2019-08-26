@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 import styled from 'styled-components';
 import { Checkbox } from 'antd';
 
@@ -7,7 +8,9 @@ export const StyledFilter = styled.article`
   flex-basis: 35%;
   padding: 50px 20px;
   @media only screen and (max-width: 1200px) {
-    display: none;
+    display: ${props => props.display || 'none'};
+    background-color: white;
+    flex-direction: column;
   }
 `;
 

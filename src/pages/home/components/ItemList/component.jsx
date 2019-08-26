@@ -1,3 +1,4 @@
+/* eslint-disable react/state-in-constructor */
 /* eslint-disable no-underscore-dangle */
 import React, { PureComponent } from 'react';
 import { List, Skeleton } from 'antd';
@@ -32,10 +33,8 @@ class ItemList extends PureComponent {
             lg: 3,
             xl: 3,
             xxl: 6,
-            justify: 'center',
           }}
           dataSource={items}
-          split={false}
           renderItem={item => {
             return (
               <List.Item key={item._id.$oid}>

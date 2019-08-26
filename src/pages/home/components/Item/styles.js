@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-  text-align: center;
+  justify-content: center;
   font-size: 20px;
   flex-basis: 200px;
 `;

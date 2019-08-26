@@ -30,7 +30,11 @@ class ItemDetails extends Component {
       match: {
         params: { id },
       },
+      history,
     } = this.props;
+    if (items.length === 0) {
+      history.push('/');
+    }
     const item = items.find(elem => {
       return elem._id.$oid === id;
     });
@@ -94,6 +98,7 @@ ItemDetails.propTypes = {
     }).isRequired,
   ).isRequired,
   match: ReactRouterPropTypes.match.isRequired,
+  history: ReactRouterPropTypes.history.isRequired,
 };
 
 export default withRouter(ItemDetails);
