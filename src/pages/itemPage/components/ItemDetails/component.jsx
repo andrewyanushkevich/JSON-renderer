@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import PropTypes from 'prop-types';
 import { Carousel, Tag } from 'antd';
+import { Helmet } from 'react-helmet';
 
 import Rating from 'blocks/Rating';
 
@@ -47,6 +48,13 @@ class ItemDetails extends Component {
     const { item } = this.state;
     return item ? (
       <StyledItem>
+        <Helmet>
+          <title>{item.title}</title>
+          <meta
+            name="description"
+            content={item.description.substr(0, item.description.indexOf('.'))}
+          />
+        </Helmet>
         <Title>{item.title}</Title>
         <div>
           <CarouselWrapper>

@@ -1,5 +1,6 @@
 /* eslint-disable react/state-in-constructor */
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 import ItemList from './components/ItemList';
 import SortBar from './components/SortBar';
@@ -28,6 +29,10 @@ class Home extends Component {
     const { showModalFilter } = this.state;
     return showModalFilter ? (
       <>
+        <Helmet>
+          <title>Filter</title>
+          <meta name="description" content="Items Filter" />
+        </Helmet>
         <Filter display="flex" />
         <div>
           <FilterButton onClick={this.handleCloseFilter} type="primary">
@@ -37,6 +42,10 @@ class Home extends Component {
       </>
     ) : (
       <StyledDiv>
+        <Helmet>
+          <title>Item List</title>
+          <meta name="description" content="List of items" />
+        </Helmet>
         <div>
           <SortBar />
           <ItemList />
