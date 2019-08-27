@@ -7,7 +7,6 @@ export const Title = styled.h2`
 `;
 
 export const StyledItem = styled.div`
-  height: 30%;
   & > div,
   h2 {
     display: flex;
@@ -18,11 +17,19 @@ export const StyledItem = styled.div`
       justify-content: space-between;
     }
   }
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-  }
+
+  height: 30%;
+  background-color: snow;
+  border-radius: 10px;
+
   :hover {
     cursor: pointer;
+    box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
   }
 `;
 
@@ -33,9 +40,7 @@ export const Img = styled.img`
 `;
 
 export const TagsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  display: block;
 `;
 
 export const RatingWrapper = styled.div`

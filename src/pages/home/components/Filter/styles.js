@@ -5,9 +5,10 @@ import { Checkbox } from 'antd';
 export const StyledFilter = styled.article`
   margin: 100px 10px;
   background-color: lightgray;
-  flex-basis: 35%;
+  max-width: 500px;
+  flex-basis: 20%;
   padding: 50px 20px;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 576px) {
     display: ${props => props.display || 'none'};
     background-color: white;
     flex-direction: column;

@@ -1,6 +1,6 @@
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable no-underscore-dangle */
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import PropTypes from 'prop-types';
@@ -61,9 +61,9 @@ class ItemDetails extends Component {
             <Carousel autoplay>
               {item.images.map(elem => {
                 return (
-                  <>
+                  <Fragment key={elem}>
                     <Img srcSet={elem} />
-                  </>
+                  </Fragment>
                 );
               })}
             </Carousel>
@@ -72,10 +72,19 @@ class ItemDetails extends Component {
             </RatingWrapper>
           </CarouselWrapper>
           <Description>
+            <TagsWrapper>
+              {item.size.map(elem => {
+                return <Tag key={elem}>{elem}</Tag>;
+              })}
+            </TagsWrapper>
             <p>{item.description}</p>
             <TagsWrapper>
               {item.color.map(elem => {
-                return <Tag color={elem}>{elem}</Tag>;
+                return (
+                  <Tag color={elem} key={elem} style={{ color: 'black' }}>
+                    {elem}
+                  </Tag>
+                );
               })}
             </TagsWrapper>
             <Price>

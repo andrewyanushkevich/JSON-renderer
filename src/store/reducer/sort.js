@@ -3,7 +3,7 @@ import * as actions from 'constants/actions';
 import SORTS from 'constants/sorts';
 
 const initialState = {
-  order: SORTS[0],
+  order: SORTS[0].id,
 };
 
 const filterReducer = (state = initialState, action) => {

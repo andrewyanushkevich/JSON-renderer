@@ -51,6 +51,7 @@ class ItemList extends PureComponent {
             hideOnSinglePage: true,
             pageSize: 9,
             onChange: this.handlePageChange,
+            style: { textAlign: 'center' },
           }}
         />
       </StyledList>

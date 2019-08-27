@@ -40,10 +40,23 @@ class Item extends Component {
           </div>
           <div>
             <Price>{item.price}$</Price>
+            <div>
+              {item.size.map(elem => {
+                return (
+                  <Tag key={elem} style={{ margin: '5px' }}>
+                    {elem}
+                  </Tag>
+                );
+              })}
+            </div>
             <TagsWrapper>
               {item.color.map(elem => {
                 return (
-                  <Tag color={elem} key={elem}>
+                  <Tag
+                    color={elem}
+                    key={elem}
+                    style={{ margin: '5px', color: 'black' }}
+                  >
                     {elem}
                   </Tag>
                 );
