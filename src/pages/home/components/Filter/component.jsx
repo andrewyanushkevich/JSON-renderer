@@ -1,10 +1,14 @@
+/* eslint-disable react/no-unused-state */
 /* eslint-disable react/state-in-constructor */
 /* eslint-disable react/prop-types */
 import React, { PureComponent } from 'react';
 import { Form, Slider } from 'antd';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import queryString from 'query-string';
 
 import Rating from 'blocks/Rating';
+
 import {
   StyledFilter,
   RatingWrapper,
@@ -29,51 +33,94 @@ class Filter extends PureComponent {
 
   componentDidUpdate() {
     const { handleFilterChange } = this.props;
-    handleFilterChange(this.state);
+    const filter = this.state;
+    handleFilterChange(filter);
   }
 
   handleChangePrice = e => {
+    const { history, location } = this.props;
+    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
     this.setState({
       price: {
         min: e[0],
         max: e[1],
       },
     });
+    // eslint-disable-next-line prefer-destructuring
+    url.minprice = e[0];
+    // eslint-disable-next-line prefer-destructuring
+    url.maxprice = e[1];
+    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
+    history.push(`?${newUrl}`);
   };
 
   handleChangeRating = e => {
+    const { history, location } = this.props;
+    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
     this.setState({
       ratings: e,
     });
+    url.ratings = e;
+    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
+    history.push(`?${newUrl}`);
   };
 
   handleChangeColors = e => {
+    const { history, location } = this.props;
+    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
     this.setState({
       colors: e,
     });
+    url.colors = e;
+    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
+    history.push(`?${newUrl}`);
   };
 
   handleChangeSizes = e => {
+    const { history, location } = this.props;
+    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
     this.setState({
       sizes: e,
     });
+    url.sizes = e;
+    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
+    history.push(`?${newUrl}`);
   };
 
   handleChangeTags = e => {
+    const { history, location } = this.props;
+    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
     this.setState({
       tags: e,
     });
+    url.tags = e;
+    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
+    history.push(`?${newUrl}`);
   };
 
   render() {
-    const { shape, display } = this.props;
+    const { shape, display, location } = this.props;
+    const url = queryString.parse(location.search, {
+      arrayFormat: 'comma',
+      parseNumbers: true,
+    });
+    const minprice = url.minprice || 0;
+    const maxprice = url.maxprice || 100;
+    const ratings = url.ratings || [];
+    let numberRatings = ratings;
+    if (typeof ratings === 'object') {
+      numberRatings = ratings.map(elem => {
+        return parseInt(elem, 10);
+      });
+    }
+
     return shape.rating ? (
       <StyledFilter display={display}>
         <Slider
           range
           min={shape.price.min}
           max={shape.price.max}
-          defaultValue={[shape.price.min, shape.price.max]}
+          defaultValue={[minprice, maxprice]}
           onAfterChange={this.handleChangePrice}
           marks={{
             [shape.price.min]: shape.price.min,
@@ -83,6 +130,7 @@ class Filter extends PureComponent {
         <h3>Rating</h3>
         <RatingWrapper
           onChange={this.handleChangeRating}
+          defaultValue={numberRatings}
           options={[
             {
               label: <Rating stars={1} totalStars={5} />,
@@ -109,6 +157,7 @@ class Filter extends PureComponent {
         <h3>Sizes</h3>
         <SizesWrapper
           onChange={this.handleChangeSizes}
+          defaultValue={url.sizes}
           options={shape.sizes.map(elem => {
             return {
               label: elem,
@@ -119,6 +168,7 @@ class Filter extends PureComponent {
         <h3>Tags</h3>
         <TagsWrapper
           onChange={this.handleChangeTags}
+          defaultValue={url.tags}
           options={shape.tags.map(elem => {
             return {
               label: elem,
@@ -129,6 +179,7 @@ class Filter extends PureComponent {
         <h3>Colors</h3>
         <ColorsWrapper
           onChange={this.handleChangeColors}
+          defaultValue={url.colors}
           options={shape.colors.map(elem => {
             return {
               label: elem,
@@ -161,4 +212,4 @@ Filter.propTypes = {
 
 const WrappedFilter = Form.create({ name: 'filter' })(Filter);
 
-export default WrappedFilter;
+export default withRouter(WrappedFilter);
