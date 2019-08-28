@@ -2,7 +2,6 @@
 /* eslint-disable no-underscore-dangle */
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Pagination } from 'antd';
 
 import Item from 'pages/home/components/Item';
 
