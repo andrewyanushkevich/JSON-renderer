@@ -37,14 +37,6 @@ class Item extends Component {
             <RatingWrapper>
               <Rating stars={item.rating} totalStars={5} />
             </RatingWrapper>
-          </div>
-          <div>
-            <Price>{item.price}$</Price>
-            <div>
-              {item.size.map(elem => {
-                return <TagItem key={elem}>{elem}</TagItem>;
-              })}
-            </div>
             <TagsWrapper>
               {item.color.map(elem => {
                 return (
@@ -54,6 +46,14 @@ class Item extends Component {
                 );
               })}
             </TagsWrapper>
+          </div>
+          <div>
+            <Price>{item.price}$</Price>
+            <div>
+              {item.size.map(elem => {
+                return <TagItem key={elem}>{elem}</TagItem>;
+              })}
+            </div>
           </div>
         </div>
       </StyledItem>

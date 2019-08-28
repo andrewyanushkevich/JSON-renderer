@@ -13,6 +13,10 @@ export const StyledDiv = styled.div`
     flex-direction: column;
     flex-basis: 80%;
   }
+  @media only screen and (max-width: 576px) {
+    margin: auto;
+    justify-content: center;
+  }
 `;
 
 export const FilterButton = styled(Button)`

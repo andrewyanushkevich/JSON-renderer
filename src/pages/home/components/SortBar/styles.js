@@ -6,7 +6,7 @@ const SortBarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-
+  margin-bottom: 20px;
   & > div {
     width: 150px;
   }

@@ -4,7 +4,6 @@ import { Tag } from 'antd';
 export const Title = styled.h2`
   justify-content: center;
   font-size: 20px;
-  flex-basis: 200px;
 `;
 
 export const StyledItem = styled.div`
@@ -15,15 +14,14 @@ export const StyledItem = styled.div`
     & > div {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
   }
-
-  height: 30%;
-  background-color: snow;
-  border-radius: 10px;
-  flex-basis: 20%;
+  display: flex;
   flex-direction: column;
+  background-color: snow;
+  flex-basis: 30%;
+  width: 400px;
+  border-radius: 10px;
   :hover {
     cursor: pointer;
     box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
@@ -32,18 +30,20 @@ export const StyledItem = styled.div`
 
   @media only screen and (max-width: 576px) {
     flex-basis: 100%;
-    margin: 0%;
+    margin: auto;
   }
 `;
 
 export const Img = styled.img`
   width: 150px;
   height: 150px;
-  margin: auto;
+  margin: 0 auto;
 `;
 
 export const TagsWrapper = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const RatingWrapper = styled.div`
@@ -51,6 +51,7 @@ export const RatingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 `;
 
 export const Price = styled.em`
