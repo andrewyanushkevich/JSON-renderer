@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-case-declarations */
+/* eslint-disable default-case */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/state-in-constructor */
-/* eslint-disable react/prop-types */
 import React, { PureComponent } from 'react';
 import { Form, Slider } from 'antd';
 import PropTypes from 'prop-types';
@@ -18,16 +20,31 @@ import {
 } from './styles';
 
 class Filter extends PureComponent {
+  state = {};
+
   componentDidMount() {
     const {
-      selected: { price, ratings, tags, colors, sizes },
+      selected: { maxprice },
+      location,
     } = this.props;
+    const url = queryString.parse(location.search, {
+      arrayFormat: 'comma',
+      parseNumbers: true,
+    });
+    const ratings = url.ratings || [];
+    let numberRatings = [ratings];
+    if (typeof ratings === 'object') {
+      numberRatings = ratings.map(elem => {
+        return parseInt(elem, 10);
+      });
+    }
     this.setState({
-      price,
-      ratings,
-      tags,
-      colors,
-      sizes,
+      minprice: url.minprice || 0,
+      maxprice: url.maxprice || maxprice,
+      ratings: numberRatings,
+      tags: url.tags || [],
+      colors: url.colors || [],
+      sizes: url.sizes || [],
     });
   }
 
@@ -37,91 +54,63 @@ class Filter extends PureComponent {
     handleFilterChange(filter);
   }
 
-  handleChangePrice = e => {
+  handleChangeFilter = (e, id) => {
     const { history, location } = this.props;
     const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    this.setState({
-      price: {
-        min: e[0],
-        max: e[1],
-      },
-    });
-    // eslint-disable-next-line prefer-destructuring
-    url.minprice = e[0];
-    // eslint-disable-next-line prefer-destructuring
-    url.maxprice = e[1];
-    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
-    history.push(`?${newUrl}`);
-  };
-
-  handleChangeRating = e => {
-    const { history, location } = this.props;
-    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    this.setState({
-      ratings: e,
-    });
-    url.ratings = e;
-    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
-    history.push(`?${newUrl}`);
-  };
-
-  handleChangeColors = e => {
-    const { history, location } = this.props;
-    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    this.setState({
-      colors: e,
-    });
-    url.colors = e;
-    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
-    history.push(`?${newUrl}`);
-  };
-
-  handleChangeSizes = e => {
-    const { history, location } = this.props;
-    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    this.setState({
-      sizes: e,
-    });
-    url.sizes = e;
-    const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
-    history.push(`?${newUrl}`);
-  };
-
-  handleChangeTags = e => {
-    const { history, location } = this.props;
-    const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    this.setState({
-      tags: e,
-    });
-    url.tags = e;
+    switch (id) {
+      case 'price':
+        this.setState({
+          price: {
+            min: e[0],
+            max: e[1],
+          },
+        });
+        const [minprice, maxprice] = e;
+        url.minprice = minprice;
+        url.maxprice = maxprice;
+        break;
+      case 'ratings':
+        this.setState({
+          ratings: e,
+        });
+        url.ratings = e;
+        break;
+      case 'colors':
+        this.setState({
+          colors: e,
+        });
+        url.colors = e;
+        break;
+      case 'sizes':
+        this.setState({
+          sizes: e,
+        });
+        url.sizes = e;
+        break;
+      case 'tags':
+        this.setState({
+          tags: e,
+        });
+        url.tags = e;
+        break;
+    }
     const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
     history.push(`?${newUrl}`);
   };
 
   render() {
-    const { shape, display, location } = this.props;
-    const url = queryString.parse(location.search, {
-      arrayFormat: 'comma',
-      parseNumbers: true,
-    });
-    const minprice = url.minprice || 0;
-    const maxprice = url.maxprice || 100;
-    const ratings = url.ratings || [];
-    let numberRatings = ratings;
-    if (typeof ratings === 'object') {
-      numberRatings = ratings.map(elem => {
-        return parseInt(elem, 10);
-      });
-    }
-
+    const { shape, display } = this.props;
+    const filter = this.state;
     return shape.rating ? (
       <StyledFilter display={display}>
         <Slider
           range
           min={shape.price.min}
           max={shape.price.max}
-          defaultValue={[minprice, maxprice]}
-          onAfterChange={this.handleChangePrice}
+          defaultValue={[filter.minprice, filter.maxprice]}
+          onAfterChange={e => {
+            return this.handleChangeFilter(e, 'price');
+          }}
           marks={{
             [shape.price.min]: shape.price.min,
             [shape.price.max]: shape.price.max,
@@ -129,8 +118,10 @@ class Filter extends PureComponent {
         />
         <h3>Rating</h3>
         <RatingWrapper
-          onChange={this.handleChangeRating}
-          defaultValue={numberRatings}
+          onChange={e => {
+            return this.handleChangeFilter(e, 'ratings');
+          }}
+          defaultValue={filter.ratings}
           options={[
             {
               label: <Rating stars={1} totalStars={5} />,
@@ -156,8 +147,10 @@ class Filter extends PureComponent {
         />
         <h3>Sizes</h3>
         <SizesWrapper
-          onChange={this.handleChangeSizes}
-          defaultValue={url.sizes}
+          onChange={e => {
+            return this.handleChangeFilter(e, 'sizes');
+          }}
+          defaultValue={filter.sizes}
           options={shape.sizes.map(elem => {
             return {
               label: elem,
@@ -167,8 +160,10 @@ class Filter extends PureComponent {
         />
         <h3>Tags</h3>
         <TagsWrapper
-          onChange={this.handleChangeTags}
-          defaultValue={url.tags}
+          onChange={e => {
+            return this.handleChangeFilter(e, 'tags');
+          }}
+          defaultValue={filter.tags}
           options={shape.tags.map(elem => {
             return {
               label: elem,
@@ -178,8 +173,10 @@ class Filter extends PureComponent {
         />
         <h3>Colors</h3>
         <ColorsWrapper
-          onChange={this.handleChangeColors}
-          defaultValue={url.colors}
+          onChange={e => {
+            return this.handleChangeFilter(e, 'colors');
+          }}
+          defaultValue={filter.colors}
           options={shape.colors.map(elem => {
             return {
               label: elem,

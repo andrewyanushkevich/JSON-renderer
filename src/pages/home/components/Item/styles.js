@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Tag } from 'antd';
 
 export const Title = styled.h2`
   justify-content: center;
@@ -21,7 +22,8 @@ export const StyledItem = styled.div`
   height: 30%;
   background-color: snow;
   border-radius: 10px;
-
+  flex-basis: 20%;
+  flex-direction: column;
   :hover {
     cursor: pointer;
     box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
@@ -29,7 +31,8 @@ export const StyledItem = styled.div`
   }
 
   @media only screen and (max-width: 576px) {
-    width: 100%;
+    flex-basis: 100%;
+    margin: 0%;
   }
 `;
 
@@ -53,4 +56,9 @@ export const RatingWrapper = styled.div`
 export const Price = styled.em`
   font-size: 18px;
   width: 50px;
+`;
+
+export const TagItem = styled(Tag)`
+  margin: 5px;
+  color: black;
 `;

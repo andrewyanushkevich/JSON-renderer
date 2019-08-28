@@ -5,8 +5,8 @@ import { Checkbox } from 'antd';
 export const StyledFilter = styled.article`
   margin: 100px 10px;
   background-color: lightgray;
-  max-width: 500px;
-  flex-basis: 20%;
+  max-width: 300px;
+  flex-basis: 15%;
   padding: 50px 20px;
   @media only screen and (max-width: 576px) {
     display: ${props => props.display || 'none'};

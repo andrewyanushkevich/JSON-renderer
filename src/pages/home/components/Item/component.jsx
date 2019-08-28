@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import { withRouter } from 'react-router-dom';
 import Rating from 'blocks/Rating';
-import { Tag } from 'antd';
 
 import {
   StyledItem,
@@ -13,6 +12,7 @@ import {
   RatingWrapper,
   Img,
   Price,
+  TagItem,
 } from './styles';
 
 class Item extends Component {
@@ -42,23 +42,15 @@ class Item extends Component {
             <Price>{item.price}$</Price>
             <div>
               {item.size.map(elem => {
-                return (
-                  <Tag key={elem} style={{ margin: '5px' }}>
-                    {elem}
-                  </Tag>
-                );
+                return <TagItem key={elem}>{elem}</TagItem>;
               })}
             </div>
             <TagsWrapper>
               {item.color.map(elem => {
                 return (
-                  <Tag
-                    color={elem}
-                    key={elem}
-                    style={{ margin: '5px', color: 'black' }}
-                  >
+                  <TagItem color={elem} key={elem}>
                     {elem}
-                  </Tag>
+                  </TagItem>
                 );
               })}
             </TagsWrapper>

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 export const StyledList = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
+  flex-direction: row;
+  flex-basis: 100%;
   @media only screen and (max-width: 576px) {
-    margin: 0 25%;
+    margin: 0%;
   }
 `;
 

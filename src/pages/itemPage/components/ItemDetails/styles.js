@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Tag } from 'antd';
 
 export const Title = styled.h2`
   text-align: center;
@@ -61,4 +62,9 @@ export const RatingWrapper = styled.div`
 
 export const Price = styled.em`
   font-size: 24px;
+`;
+
+export const TagItem = styled(Tag)`
+  margin: 5px;
+  color: black;
 `;

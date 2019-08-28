@@ -28,12 +28,13 @@ class ItemList extends PureComponent {
         <List
           grid={{
             xs: 1,
-            sm: 2,
+            sm: 1,
             md: 2,
             lg: 3,
             xl: 3,
-            xxl: 6,
+            xxl: 3,
           }}
+          itemLayout="vertical"
           dataSource={items}
           renderItem={item => {
             return (

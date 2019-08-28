@@ -18,6 +18,7 @@ import {
   TagsWrapper,
   RatingWrapper,
   Price,
+  TagItem,
 } from './styles';
 
 class ItemDetails extends Component {
@@ -81,9 +82,9 @@ class ItemDetails extends Component {
             <TagsWrapper>
               {item.color.map(elem => {
                 return (
-                  <Tag color={elem} key={elem} style={{ color: 'black' }}>
+                  <TagItem color={elem} key={elem} style={{ color: 'black' }}>
                     {elem}
-                  </Tag>
+                  </TagItem>
                 );
               })}
             </TagsWrapper>
