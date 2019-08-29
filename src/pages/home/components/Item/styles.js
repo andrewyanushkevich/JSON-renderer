@@ -4,6 +4,7 @@ import { Tag } from 'antd';
 export const Title = styled.h2`
   justify-content: center;
   font-size: 20px;
+  padding: 10px;
 `;
 
 export const StyledItem = styled.div`
@@ -18,10 +19,13 @@ export const StyledItem = styled.div`
   }
   display: flex;
   flex-direction: column;
-  background-color: snow;
   flex-basis: 30%;
   width: 400px;
   border-radius: 10px;
+  margin: 20px 0px;
+
+  background-color: snow;
+
   :hover {
     cursor: pointer;
     box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
@@ -30,7 +34,6 @@ export const StyledItem = styled.div`
 
   @media only screen and (max-width: 576px) {
     flex-basis: 100%;
-    margin: auto;
   }
 `;
 
@@ -43,7 +46,10 @@ export const Img = styled.img`
 export const TagsWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 10px;
 `;
 
 export const RatingWrapper = styled.div`

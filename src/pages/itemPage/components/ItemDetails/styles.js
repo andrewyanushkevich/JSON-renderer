@@ -14,10 +14,13 @@ export const StyledItem = styled.div`
     display: flex;
     flex-direction: row;
   }
+
+  background-color: snow;
+
   @media only screen and (max-width: 576px) {
     width: 100%;
     height: 100%;
-    margin: 0%;
+    margin: 5%;
     & > div {
       display: flex;
       flex-direction: column;

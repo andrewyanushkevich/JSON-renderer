@@ -36,7 +36,7 @@ class Home extends Component {
         <Filter display="flex" />
         <div>
           <FilterButton onClick={this.handleCloseFilter} type="primary">
-            filter
+            Accept
           </FilterButton>
         </div>
       </>

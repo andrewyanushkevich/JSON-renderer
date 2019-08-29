@@ -1,23 +1,19 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-case-declarations */
-/* eslint-disable default-case */
-/* eslint-disable react/no-unused-state */
 /* eslint-disable react/state-in-constructor */
 import React, { PureComponent } from 'react';
-import { Form, Slider } from 'antd';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import queryString from 'query-string';
 
-import Rating from 'blocks/Rating';
+import * as filters from 'constants/filters';
+import PriceFilter from './Filters/PriceFilter';
+import RatingFilter from './Filters/RatingFilter';
+import SizesFilter from './Filters/SizesFilter';
+import TagsFilter from './Filters/TagsFilter';
+import ColorsFilter from './Filters/ColorsFilter';
 
-import {
-  StyledFilter,
-  RatingWrapper,
-  SizesWrapper,
-  TagsWrapper,
-  ColorsWrapper,
-} from './styles';
+import { StyledFilter } from './styles';
 
 class Filter extends PureComponent {
   state = {};
@@ -32,19 +28,18 @@ class Filter extends PureComponent {
       parseNumbers: true,
     });
     const ratings = url.ratings || [];
-    let numberRatings = [ratings];
-    if (typeof ratings === 'object') {
-      numberRatings = ratings.map(elem => {
-        return parseInt(elem, 10);
-      });
-    }
+    let numberRatings =
+      typeof ratings === 'number' ? [ratings] : Array.from(ratings);
+    numberRatings = numberRatings.map(elem => {
+      return parseInt(elem, 10);
+    });
     this.setState({
-      minprice: url.minprice || 0,
-      maxprice: url.maxprice || maxprice,
-      ratings: numberRatings,
-      tags: url.tags || [],
-      colors: url.colors || [],
-      sizes: url.sizes || [],
+      [filters.MINPRICE]: url.minprice || 0,
+      [filters.MAXPRICE]: url.maxprice || maxprice,
+      [filters.RATINGS]: numberRatings,
+      [filters.TAGS]: url.tags || [],
+      [filters.COLORS]: url.colors || [],
+      [filters.SIZES]: url.sizes || [],
     });
   }
 
@@ -60,38 +55,18 @@ class Filter extends PureComponent {
     switch (id) {
       case 'price':
         this.setState({
-          price: {
-            min: e[0],
-            max: e[1],
-          },
+          [filters.MINPRICE]: e[0],
+          [filters.MAXPRICE]: e[1],
         });
         const [minprice, maxprice] = e;
         url.minprice = minprice;
         url.maxprice = maxprice;
         break;
-      case 'ratings':
+      default:
         this.setState({
-          ratings: e,
+          [id]: e,
         });
-        url.ratings = e;
-        break;
-      case 'colors':
-        this.setState({
-          colors: e,
-        });
-        url.colors = e;
-        break;
-      case 'sizes':
-        this.setState({
-          sizes: e,
-        });
-        url.sizes = e;
-        break;
-      case 'tags':
-        this.setState({
-          tags: e,
-        });
-        url.tags = e;
+        url[id] = e;
         break;
     }
     const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
@@ -100,89 +75,38 @@ class Filter extends PureComponent {
 
   render() {
     const { shape, display } = this.props;
-    const filter = this.state;
-    return shape.rating ? (
+    const { minprice, maxprice, ratings, colors, sizes, tags } = this.state;
+    return Object.keys(shape).length > 0 ? (
       <StyledFilter display={display}>
-        <Slider
-          range
-          min={shape.price.min}
-          max={shape.price.max}
-          defaultValue={[filter.minprice, filter.maxprice]}
-          onAfterChange={e => {
-            return this.handleChangeFilter(e, 'price');
-          }}
-          marks={{
-            [shape.price.min]: shape.price.min,
-            [shape.price.max]: shape.price.max,
-          }}
+        <PriceFilter
+          minprice={minprice}
+          maxprice={maxprice}
+          shapeMinPrice={shape.price.min}
+          shapeMaxPrice={shape.price.max}
+          handleChangeFilter={this.handleChangeFilter}
         />
         <h3>Rating</h3>
-        <RatingWrapper
-          onChange={e => {
-            return this.handleChangeFilter(e, 'ratings');
-          }}
-          defaultValue={filter.ratings}
-          options={[
-            {
-              label: <Rating stars={1} totalStars={5} />,
-              value: 1,
-            },
-            {
-              label: <Rating stars={2} totalStars={5} />,
-              value: 2,
-            },
-            {
-              label: <Rating stars={3} totalStars={5} />,
-              value: 3,
-            },
-            {
-              label: <Rating stars={4} totalStars={5} />,
-              value: 4,
-            },
-            {
-              label: <Rating stars={5} totalStars={5} />,
-              value: 5,
-            },
-          ]}
+        <RatingFilter
+          ratings={ratings}
+          handleChangeFilter={this.handleChangeFilter}
         />
         <h3>Sizes</h3>
-        <SizesWrapper
-          onChange={e => {
-            return this.handleChangeFilter(e, 'sizes');
-          }}
-          defaultValue={filter.sizes}
-          options={shape.sizes.map(elem => {
-            return {
-              label: elem,
-              value: elem,
-            };
-          })}
+        <SizesFilter
+          sizes={sizes}
+          shapeSizes={shape.sizes}
+          handleChangeFilter={this.handleChangeFilter}
         />
         <h3>Tags</h3>
-        <TagsWrapper
-          onChange={e => {
-            return this.handleChangeFilter(e, 'tags');
-          }}
-          defaultValue={filter.tags}
-          options={shape.tags.map(elem => {
-            return {
-              label: elem,
-              value: elem,
-            };
-          })}
+        <TagsFilter
+          tags={tags}
+          shapeTags={shape.tags}
+          handleChangeFilter={this.handleChangeFilter}
         />
         <h3>Colors</h3>
-        <ColorsWrapper
-          onChange={e => {
-            return this.handleChangeFilter(e, 'colors');
-          }}
-          defaultValue={filter.colors}
-          options={shape.colors.map(elem => {
-            return {
-              label: elem,
-              value: elem,
-            };
-          })}
+        <ColorsFilter
+          colors={colors}
+          shapeColors={shape.colors}
+          handleChangeFilter={this.handleChangeFilter}
         />
       </StyledFilter>
     ) : null;
@@ -199,14 +123,12 @@ Filter.propTypes = {
       min: PropTypes.number,
       max: PropTypes.number,
     }),
-    size: PropTypes.arrayOf(PropTypes.string),
+    sizes: PropTypes.arrayOf(PropTypes.string),
     images: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.string,
-    color: PropTypes.arrayOf(PropTypes.string),
+    colors: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 
-const WrappedFilter = Form.create({ name: 'filter' })(Filter);
-
-export default withRouter(WrappedFilter);
+export default withRouter(Filter);

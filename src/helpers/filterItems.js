@@ -19,12 +19,12 @@ const filterItemsOnRating = (item, ratings) => {
 };
 
 const filterItems = (items, selectedFilter) => {
-  const price = selectedFilter.price || { min: 0, max: Number.MAX_VALUE };
-  const { min, max } = price;
+  const minprice = selectedFilter.minprice || 0;
+  const maxprice = selectedFilter.maxprice || Number.MAX_VALUE;
   return items.filter(elem => {
     return (
-      elem.price >= min &&
-      elem.price <= max &&
+      elem.price >= minprice &&
+      elem.price <= maxprice &&
       filterItemsOnRating(elem, selectedFilter.ratings) &&
       shareCommonElements(elem.tags, selectedFilter.tags) &&
       shareCommonElements(elem.color, selectedFilter.colors) &&
