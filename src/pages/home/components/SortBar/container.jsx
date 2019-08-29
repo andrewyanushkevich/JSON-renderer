@@ -6,28 +6,21 @@ import sortItems from 'helpers/sortItems';
 
 import SortBar from './component';
 
-const getFilteredAndSortedItems = (items, filter, sortOrder) => {
-  return sortItems(filterItems([...items], filter), sortOrder);
-};
+const getFilteredAndSortedItems = (items, filter, sortOrder) =>
+  sortItems(filterItems([...items], filter), sortOrder);
 
-const mapStateToProps = state => {
-  return {
-    filteredItems: getFilteredAndSortedItems(
-      state.product.items,
-      state.filters.selected,
-      state.sort.order,
-    ).length,
-    items: state.product.items.length,
-  };
-};
+const mapStateToProps = state => ({
+  filteredItems: getFilteredAndSortedItems(
+    state.product.items,
+    state.filters.selected,
+    state.sort.order,
+  ).length,
+  items: state.product.items.length,
+});
 
-const mapDispatchToProps = dispatch => {
-  return {
-    handleSetSortOrder: order => {
-      return dispatch(sortOrderSelected(order));
-    },
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  handleSetSortOrder: order => dispatch(sortOrderSelected(order)),
+});
 
 export default connect(
   mapStateToProps,

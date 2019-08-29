@@ -7,16 +7,12 @@ const TagsFilter = props => {
   const { tags, shapeTags, handleChangeFilter } = props;
   return (
     <TagsWrapper
-      onChange={e => {
-        return handleChangeFilter(e, 'tags');
-      }}
-      defaultValue={tags}
-      options={shapeTags.map(elem => {
-        return {
-          label: elem,
-          value: elem,
-        };
-      })}
+      onChange={e => handleChangeFilter(e, 'tags')}
+      value={tags}
+      options={shapeTags.map(elem => ({
+        label: elem,
+        value: elem,
+      }))}
     />
   );
 };

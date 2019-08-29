@@ -15,10 +15,8 @@ const PriceFilter = props => {
       range
       min={shapeMinPrice}
       max={shapeMaxPrice}
-      defaultValue={[minprice, maxprice]}
-      onAfterChange={e => {
-        return handleChangeFilter(e, 'price');
-      }}
+      value={[minprice, maxprice]}
+      onChange={e => handleChangeFilter(e, 'price')}
       marks={{
         [shapeMinPrice]: shapeMinPrice,
         [shapeMaxPrice]: shapeMaxPrice,

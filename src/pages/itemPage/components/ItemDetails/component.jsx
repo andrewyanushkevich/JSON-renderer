@@ -4,7 +4,7 @@ import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import PropTypes from 'prop-types';
-import { Carousel, Tag } from 'antd';
+import { Tag } from 'antd';
 import { Helmet } from 'react-helmet';
 
 import Rating from 'blocks/Rating';
@@ -19,6 +19,7 @@ import {
   RatingWrapper,
   Price,
   TagItem,
+  StyledCarousel,
 } from './styles';
 
 class ItemDetails extends Component {
@@ -37,9 +38,7 @@ class ItemDetails extends Component {
     if (items.length === 0) {
       history.push('/');
     }
-    const item = items.find(elem => {
-      return elem._id.$oid === id;
-    });
+    const item = items.find(elem => elem._id.$oid === id);
     this.setState({
       item,
     });
@@ -59,34 +58,30 @@ class ItemDetails extends Component {
         <Title>{item.title}</Title>
         <div>
           <CarouselWrapper>
-            <Carousel autoplay>
-              {item.images.map(elem => {
-                return (
-                  <Fragment key={elem}>
-                    <Img srcSet={elem} />
-                  </Fragment>
-                );
-              })}
-            </Carousel>
+            <StyledCarousel autoplay>
+              {item.images.map(elem => (
+                <Fragment key={elem}>
+                  <Img srcSet={elem} />
+                </Fragment>
+              ))}
+            </StyledCarousel>
             <RatingWrapper>
               <Rating stars={item.rating} totalStars={5} />
             </RatingWrapper>
           </CarouselWrapper>
           <Description>
             <TagsWrapper>
-              {item.size.map(elem => {
-                return <Tag key={elem}>{elem}</Tag>;
-              })}
+              {item.size.map(elem => (
+                <Tag key={elem}>{elem}</Tag>
+              ))}
             </TagsWrapper>
             <p>{item.description}</p>
             <TagsWrapper>
-              {item.color.map(elem => {
-                return (
-                  <TagItem color={elem} key={elem} style={{ color: 'black' }}>
-                    {elem}
-                  </TagItem>
-                );
-              })}
+              {item.color.map(elem => (
+                <TagItem color={elem} key={elem} style={{ color: 'black' }}>
+                  {elem}
+                </TagItem>
+              ))}
             </TagsWrapper>
             <Price>
               Price:

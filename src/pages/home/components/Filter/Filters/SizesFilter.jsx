@@ -7,16 +7,12 @@ const SizesFilter = props => {
   const { sizes, shapeSizes, handleChangeFilter } = props;
   return (
     <SizesWrapper
-      onChange={e => {
-        return handleChangeFilter(e, 'sizes');
-      }}
-      defaultValue={sizes}
-      options={shapeSizes.map(elem => {
-        return {
-          label: elem,
-          value: elem,
-        };
-      })}
+      onChange={e => handleChangeFilter(e, 'sizes')}
+      value={sizes}
+      options={shapeSizes.map(elem => ({
+        label: elem,
+        value: elem,
+      }))}
     />
   );
 };

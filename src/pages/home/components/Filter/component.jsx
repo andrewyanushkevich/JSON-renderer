@@ -5,15 +5,17 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import queryString from 'query-string';
+import { Button } from 'antd';
 
 import * as filters from 'constants/filters';
+import SearchFilter from './Filters/SearchFilter';
 import PriceFilter from './Filters/PriceFilter';
 import RatingFilter from './Filters/RatingFilter';
 import SizesFilter from './Filters/SizesFilter';
 import TagsFilter from './Filters/TagsFilter';
 import ColorsFilter from './Filters/ColorsFilter';
 
-import { StyledFilter } from './styles';
+import { StyledFilter, ResetButton } from './styles';
 
 class Filter extends PureComponent {
   state = {};
@@ -23,20 +25,21 @@ class Filter extends PureComponent {
       selected: { maxprice },
       location,
     } = this.props;
+
     const url = queryString.parse(location.search, {
       arrayFormat: 'comma',
       parseNumbers: true,
     });
+
     const ratings = url.ratings || [];
     let numberRatings =
       typeof ratings === 'number' ? [ratings] : Array.from(ratings);
-    numberRatings = numberRatings.map(elem => {
-      return parseInt(elem, 10);
-    });
+    numberRatings = numberRatings.map(elem => parseInt(elem, 10));
+
     this.setState({
       [filters.MINPRICE]: url.minprice || 0,
       [filters.MAXPRICE]: url.maxprice || maxprice,
-      [filters.RATINGS]: numberRatings,
+      [filters.RATINGS]: numberRatings || [],
       [filters.TAGS]: url.tags || [],
       [filters.COLORS]: url.colors || [],
       [filters.SIZES]: url.sizes || [],
@@ -44,9 +47,9 @@ class Filter extends PureComponent {
   }
 
   componentDidUpdate() {
-    const { handleFilterChange } = this.props;
+    const { handleSetFilter } = this.props;
     const filter = this.state;
-    handleFilterChange(filter);
+    handleSetFilter(filter);
   }
 
   handleChangeFilter = (e, id) => {
@@ -73,11 +76,40 @@ class Filter extends PureComponent {
     history.push(`?${newUrl}`);
   };
 
+  handleResetFilter = () => {
+    const { shape, history } = this.props;
+    this.setState({
+      search: '',
+      [filters.MINPRICE]: 0,
+      [filters.MAXPRICE]: shape.price.max,
+      [filters.RATINGS]: [],
+      [filters.TAGS]: [],
+      [filters.COLORS]: [],
+      [filters.SIZES]: [],
+    });
+    history.push('/');
+  };
+
+  handleSearch = e => {
+    this.setState({
+      search: e.target.value,
+    });
+  };
+
   render() {
     const { shape, display } = this.props;
-    const { minprice, maxprice, ratings, colors, sizes, tags } = this.state;
+    const {
+      minprice,
+      maxprice,
+      ratings,
+      colors,
+      sizes,
+      tags,
+      search,
+    } = this.state;
     return Object.keys(shape).length > 0 ? (
       <StyledFilter display={display}>
+        <SearchFilter handleSearch={this.handleSearch} value={search} />
         <PriceFilter
           minprice={minprice}
           maxprice={maxprice}
@@ -108,6 +140,11 @@ class Filter extends PureComponent {
           shapeColors={shape.colors}
           handleChangeFilter={this.handleChangeFilter}
         />
+        <ResetButton>
+          <Button onClick={this.handleResetFilter} type="primary">
+            Reset
+          </Button>
+        </ResetButton>
       </StyledFilter>
     ) : null;
   }

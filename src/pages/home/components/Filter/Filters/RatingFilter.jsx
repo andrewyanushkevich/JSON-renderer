@@ -9,10 +9,8 @@ const RatingFilter = props => {
   const { ratings, handleChangeFilter } = props;
   return (
     <RatingWrapper
-      onChange={e => {
-        return handleChangeFilter(e, 'ratings');
-      }}
-      defaultValue={ratings}
+      onChange={e => handleChangeFilter(e, 'ratings')}
+      value={ratings}
       options={[
         {
           label: <Rating stars={1} totalStars={5} />,

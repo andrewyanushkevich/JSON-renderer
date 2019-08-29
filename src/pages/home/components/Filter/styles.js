@@ -15,3 +15,7 @@ export const StyledFilter = styled.article`
     flex-direction: column;
   }
 `;
+
+export const ResetButton = styled.div`
+  margin: 30px 10px;
+`;

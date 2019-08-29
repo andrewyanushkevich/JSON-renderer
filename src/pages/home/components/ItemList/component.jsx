@@ -36,9 +36,9 @@ class ItemList extends PureComponent {
         <div>
           {items
             .slice(itemsPerPAge * (currentPage - 1), itemsPerPAge * currentPage)
-            .map(elem => {
-              return <Item item={elem} key={elem._id.$oid} />;
-            })}
+            .map(elem => (
+              <Item item={elem} key={elem._id.$oid} />
+            ))}
         </div>
         <StyledPagination
           total={items.length}

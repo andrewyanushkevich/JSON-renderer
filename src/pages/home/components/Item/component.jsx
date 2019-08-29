@@ -38,21 +38,19 @@ class Item extends Component {
               <Rating stars={item.rating} totalStars={5} />
             </RatingWrapper>
             <TagsWrapper>
-              {item.color.map(elem => {
-                return (
-                  <TagItem color={elem} key={elem}>
-                    {elem}
-                  </TagItem>
-                );
-              })}
+              {item.color.map(elem => (
+                <TagItem color={elem} key={elem}>
+                  {elem}
+                </TagItem>
+              ))}
             </TagsWrapper>
           </div>
           <div>
             <Price>{item.price}$</Price>
             <div>
-              {item.size.map(elem => {
-                return <TagItem key={elem}>{elem}</TagItem>;
-              })}
+              {item.size.map(elem => (
+                <TagItem key={elem}>{elem}</TagItem>
+              ))}
             </div>
           </div>
         </div>

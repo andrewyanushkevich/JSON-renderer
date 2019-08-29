@@ -3,34 +3,29 @@ const shareCommonElements = (arr1, arr2) => {
     return true;
   }
 
-  const res = arr1.filter(elem => {
-    return arr2.includes(elem);
-  });
+  const res = arr1.filter(elem => arr2.includes(elem));
 
   return res.length !== 0;
 };
 
-const filterItemsOnRating = (item, ratings) => {
-  return (
-    ratings.some(elem => {
-      return Math.round(item.rating) === elem;
-    }) || ratings.length === 0
-  );
-};
+const filterItemsOnRating = (item, ratings) =>
+  ratings.some(elem => Math.round(item.rating) === elem) ||
+  ratings.length === 0;
 
 const filterItems = (items, selectedFilter) => {
   const minprice = selectedFilter.minprice || 0;
   const maxprice = selectedFilter.maxprice || Number.MAX_VALUE;
-  return items.filter(elem => {
-    return (
+  const search = selectedFilter.search || '';
+  return items.filter(
+    elem =>
       elem.price >= minprice &&
       elem.price <= maxprice &&
       filterItemsOnRating(elem, selectedFilter.ratings) &&
       shareCommonElements(elem.tags, selectedFilter.tags) &&
       shareCommonElements(elem.color, selectedFilter.colors) &&
-      shareCommonElements(elem.size, selectedFilter.sizes)
-    );
-  });
+      shareCommonElements(elem.size, selectedFilter.sizes) &&
+      elem.title.toLowerCase().includes(search.trim().toLowerCase()),
+  );
 };
 
 export default filterItems;

@@ -7,16 +7,12 @@ const ColorsFilter = props => {
   const { colors, shapeColors, handleChangeFilter } = props;
   return (
     <ColorsWrapper
-      onChange={e => {
-        return handleChangeFilter(e, 'colors');
-      }}
-      defaultValue={colors}
-      options={shapeColors.map(elem => {
-        return {
-          label: elem,
-          value: elem,
-        };
-      })}
+      onChange={e => handleChangeFilter(e, 'colors')}
+      value={colors}
+      options={shapeColors.map(elem => ({
+        label: elem,
+        value: elem,
+      }))}
     />
   );
 };

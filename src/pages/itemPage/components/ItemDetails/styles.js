@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Tag } from 'antd';
+import { Tag, Carousel } from 'antd';
 
 export const Title = styled.h2`
   text-align: center;
@@ -16,7 +16,6 @@ export const StyledItem = styled.div`
   }
 
   background-color: snow;
-
   @media only screen and (max-width: 576px) {
     width: 100%;
     height: 100%;
@@ -33,6 +32,13 @@ export const Img = styled.img`
   height: 250px;
   @media only screen and (max-width: 576px) {
     margin: auto;
+  }
+`;
+
+export const StyledCarousel = styled(Carousel)`
+  & > ul > li {
+    background-color: black;
+    height: 10px;
   }
 `;
 
