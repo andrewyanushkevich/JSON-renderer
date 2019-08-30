@@ -13,7 +13,8 @@ export const StyledList = styled.div`
     justify-content: space-around;
   }
   @media only screen and (max-width: 576px) {
-    margin: auto;
+    margin: 5%;
+    flex-basis: 90%;
   }
 `;
 

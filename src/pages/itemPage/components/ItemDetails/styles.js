@@ -17,7 +17,7 @@ export const StyledItem = styled.div`
 
   background-color: snow;
   @media only screen and (max-width: 576px) {
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 5%;
     & > div {
@@ -38,7 +38,7 @@ export const Img = styled.img`
 export const StyledCarousel = styled(Carousel)`
   & > ul > li {
     background-color: black;
-    height: 10px;
+    height: 5px;
   }
 `;
 

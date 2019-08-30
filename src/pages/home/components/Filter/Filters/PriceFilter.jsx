@@ -25,11 +25,16 @@ const PriceFilter = props => {
   );
 };
 
+PriceFilter.defaultProps = {
+  minprice: 0,
+  maxprice: 0,
+};
+
 PriceFilter.propTypes = {
   shapeMinPrice: PropTypes.number.isRequired,
   shapeMaxPrice: PropTypes.number.isRequired,
-  minprice: PropTypes.number.isRequired,
-  maxprice: PropTypes.number.isRequired,
+  minprice: PropTypes.number,
+  maxprice: PropTypes.number,
   handleChangeFilter: PropTypes.func.isRequired,
 };
 

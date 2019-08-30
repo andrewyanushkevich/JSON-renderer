@@ -20,7 +20,7 @@ export const StyledItem = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
-  width: 400px;
+  width: 300px;
   border-radius: 10px;
   margin: 20px 0px;
 
@@ -33,7 +33,7 @@ export const StyledItem = styled.div`
   }
 
   @media only screen and (max-width: 576px) {
-    flex-basis: 100%;
+    width: 80%;
   }
 `;
 
@@ -49,7 +49,7 @@ export const TagsWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 10px;
+  margin: 20px;
 `;
 
 export const RatingWrapper = styled.div`

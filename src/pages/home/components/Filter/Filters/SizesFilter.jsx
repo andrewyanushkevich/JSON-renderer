@@ -17,8 +17,12 @@ const SizesFilter = props => {
   );
 };
 
+SizesFilter.defaultProps = {
+  sizes: [],
+};
+
 SizesFilter.propTypes = {
-  sizes: PropTypes.arrayOf(PropTypes.string).isRequired,
+  sizes: PropTypes.arrayOf(PropTypes.string),
   shapeSizes: PropTypes.arrayOf(PropTypes.string).isRequired,
   handleChangeFilter: PropTypes.func.isRequired,
 };

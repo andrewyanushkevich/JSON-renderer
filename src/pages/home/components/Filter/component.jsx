@@ -7,7 +7,14 @@ import { withRouter } from 'react-router-dom';
 import queryString from 'query-string';
 import { Button } from 'antd';
 
-import * as filters from 'constants/filters';
+import {
+  MINPRICE,
+  MAXPRICE,
+  RATINGS,
+  SIZES,
+  TAGS,
+  COLORS,
+} from 'constants/filters';
 import SearchFilter from './Filters/SearchFilter';
 import PriceFilter from './Filters/PriceFilter';
 import RatingFilter from './Filters/RatingFilter';
@@ -37,12 +44,12 @@ class Filter extends PureComponent {
     numberRatings = numberRatings.map(elem => parseInt(elem, 10));
 
     this.setState({
-      [filters.MINPRICE]: url.minprice || 0,
-      [filters.MAXPRICE]: url.maxprice || maxprice,
-      [filters.RATINGS]: numberRatings || [],
-      [filters.TAGS]: url.tags || [],
-      [filters.COLORS]: url.colors || [],
-      [filters.SIZES]: url.sizes || [],
+      [MINPRICE]: url.minprice || 0,
+      [MAXPRICE]: url.maxprice || maxprice,
+      [RATINGS]: numberRatings || [],
+      [TAGS]: url.tags || [],
+      [COLORS]: url.colors || [],
+      [SIZES]: url.sizes || [],
     });
   }
 
@@ -55,22 +62,19 @@ class Filter extends PureComponent {
   handleChangeFilter = (e, id) => {
     const { history, location } = this.props;
     const url = queryString.parse(location.search, { arrayFormat: 'comma' });
-    switch (id) {
-      case 'price':
-        this.setState({
-          [filters.MINPRICE]: e[0],
-          [filters.MAXPRICE]: e[1],
-        });
-        const [minprice, maxprice] = e;
-        url.minprice = minprice;
-        url.maxprice = maxprice;
-        break;
-      default:
-        this.setState({
-          [id]: e,
-        });
-        url[id] = e;
-        break;
+    if (id === 'price') {
+      this.setState({
+        [MINPRICE]: e[0],
+        [MAXPRICE]: e[1],
+      });
+      const [minprice, maxprice] = e;
+      url.minprice = minprice;
+      url.maxprice = maxprice;
+    } else {
+      this.setState({
+        [id]: e,
+      });
+      url[id] = e;
     }
     const newUrl = queryString.stringify(url, { arrayFormat: 'comma' });
     history.push(`?${newUrl}`);
@@ -80,12 +84,12 @@ class Filter extends PureComponent {
     const { shape, history } = this.props;
     this.setState({
       search: '',
-      [filters.MINPRICE]: 0,
-      [filters.MAXPRICE]: shape.price.max,
-      [filters.RATINGS]: [],
-      [filters.TAGS]: [],
-      [filters.COLORS]: [],
-      [filters.SIZES]: [],
+      [MINPRICE]: 0,
+      [MAXPRICE]: shape.price.max,
+      [RATINGS]: [],
+      [TAGS]: [],
+      [COLORS]: [],
+      [SIZES]: [],
     });
     history.push('/');
   };

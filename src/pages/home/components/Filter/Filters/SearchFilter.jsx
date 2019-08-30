@@ -15,8 +15,12 @@ const SearchFilter = props => {
   );
 };
 
+SearchFilter.defaultProps = {
+  value: '',
+};
+
 SearchFilter.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   handleSearch: PropTypes.func.isRequired,
 };
 

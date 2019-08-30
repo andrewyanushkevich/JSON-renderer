@@ -14,7 +14,7 @@ export const StyledDiv = styled.div`
     flex-basis: 80%;
   }
   @media only screen and (max-width: 576px) {
-    margin: auto;
+    margin: 0px;
     justify-content: center;
   }
 `;

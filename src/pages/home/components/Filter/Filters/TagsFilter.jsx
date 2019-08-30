@@ -17,8 +17,12 @@ const TagsFilter = props => {
   );
 };
 
+TagsFilter.defaultProps = {
+  tags: [],
+};
+
 TagsFilter.propTypes = {
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
   shapeTags: PropTypes.arrayOf(PropTypes.string).isRequired,
   handleChangeFilter: PropTypes.func.isRequired,
 };

@@ -37,8 +37,12 @@ const RatingFilter = props => {
   );
 };
 
+RatingFilter.defaultProps = {
+  ratings: [],
+};
+
 RatingFilter.propTypes = {
-  ratings: PropTypes.arrayOf(PropTypes.number).isRequired,
+  ratings: PropTypes.arrayOf(PropTypes.number),
   handleChangeFilter: PropTypes.func.isRequired,
 };
 

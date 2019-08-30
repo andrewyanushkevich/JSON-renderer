@@ -17,8 +17,12 @@ const ColorsFilter = props => {
   );
 };
 
+ColorsFilter.defaultProps = {
+  colors: [],
+};
+
 ColorsFilter.propTypes = {
-  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
+  colors: PropTypes.arrayOf(PropTypes.string),
   shapeColors: PropTypes.arrayOf(PropTypes.string).isRequired,
   handleChangeFilter: PropTypes.func.isRequired,
 };
