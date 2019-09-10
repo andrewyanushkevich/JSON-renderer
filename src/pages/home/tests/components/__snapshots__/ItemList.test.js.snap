@@ -1,0 +1,1738 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) ItemList should render correctly 1`] = `
+<div
+  className="sc-gzVnrw bZZhMg"
+>
+  <div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Polo red
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2016/06/03/source-img/20160603190149_72043.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-red sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              red
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            50
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              M
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              S
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Yellow pant
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2018/07/20/source-img/20180720200455_27922.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-yellow sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              yellow
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            6
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Blue & yellow pant
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2018/07/25/source-img/20180725172558_32423.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-yellow sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              yellow
+            </span>
+            <span
+              className="ant-tag ant-tag-blue sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              blue
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            66
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              M
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Dark blue jean
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2018/07/20/source-img/20180720161510_63076.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-blue sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              blue
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            20
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Blue cotton jacket
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/30/source-img/20171030165524_57809.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-blue sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              blue
+            </span>
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "white",
+                }
+              }
+            >
+              white
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            110
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              M
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Modern art shirt
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2018/08/03/source-img/20180803155617_93798.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-yellow sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              yellow
+            </span>
+            <span
+              className="ant-tag ant-tag-blue sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              blue
+            </span>
+            <span
+              className="ant-tag ant-tag-purple sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              purple
+            </span>
+            <span
+              className="ant-tag ant-tag-green sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              green
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            10
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Black cotton jacket
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2018/08/24/source-img/20180824193826_91772.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "black",
+                }
+              }
+            >
+              black
+            </span>
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "grey",
+                }
+              }
+            >
+              grey
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            110
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              M
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Blazer black
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2016/07/25/source-img/20160725122041_81042.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "black",
+                }
+              }
+            >
+              black
+            </span>
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "grey",
+                }
+              }
+            >
+              grey
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            65
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XS
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bwzfXH drhLpv"
+      onClick={[Function]}
+    >
+      <h2
+        className="sc-bdVaJa kbFZZC"
+      >
+        Blazer christmas
+      </h2>
+      <div>
+        <div>
+          <img
+            className="sc-htpNat kRFHUR"
+            srcSet="https://gloimg.samcdn.com/S/pdm-product-pic/Clothing/2017/10/26/source-img/20171026104800_75333.jpg"
+          />
+          <div
+            className="sc-ifAKCX kYHPDS"
+          >
+            <div>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="orange"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-star fa-w-18 "
+                color="lightgray"
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="sc-bxivhb eUsJrq"
+          >
+            <span
+              className="ant-tag ant-tag-red sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              red
+            </span>
+            <span
+              className="ant-tag ant-tag-has-color sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": "grey",
+                }
+              }
+            >
+              grey
+            </span>
+          </div>
+        </div>
+        <div>
+          <em
+            className="sc-EHOje hvCOeX"
+          >
+            65
+            $
+          </em>
+          <div>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              XL
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              L
+            </span>
+            <span
+              className="ant-tag sc-bZQynM didVjt"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                }
+              }
+            >
+              M
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul
+    className="ant-pagination sc-htoDjs bUrTor"
+    style={Object {}}
+    unselectable="unselectable"
+  >
+    <li
+      aria-disabled={true}
+      className="ant-pagination-disabled ant-pagination-prev"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex={null}
+      title="Previous Page"
+    >
+      <a
+        className="ant-pagination-item-link"
+      >
+        <i
+          aria-label="icon: left"
+          className="anticon anticon-left"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="left"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+            />
+          </svg>
+        </i>
+      </a>
+    </li>
+    <li
+      className="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+      title={1}
+    >
+      <a>
+        1
+      </a>
+    </li>
+    <li
+      className="ant-pagination-item ant-pagination-item-2"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+      title={2}
+    >
+      <a>
+        2
+      </a>
+    </li>
+    <li
+      className="ant-pagination-item ant-pagination-item-3"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+      title={3}
+    >
+      <a>
+        3
+      </a>
+    </li>
+    <li
+      className="ant-pagination-item ant-pagination-item-4"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
+      title={4}
+    >
+      <a>
+        4
+      </a>
+    </li>
+    <li
+      aria-disabled={false}
+      className=" ant-pagination-next"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex={0}
+      title="Next Page"
+    >
+      <a
+        className="ant-pagination-item-link"
+      >
+        <i
+          aria-label="icon: right"
+          className="anticon anticon-right"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+            />
+          </svg>
+        </i>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`(Container) Item List  should render correctly 1`] = `ReactWrapper {}`;

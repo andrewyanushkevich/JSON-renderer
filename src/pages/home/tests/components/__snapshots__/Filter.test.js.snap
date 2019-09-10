@@ -1,0 +1,1329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Filter should render correctly 1`] = `
+<article
+  className="sc-ifAKCX eScQGO"
+>
+  <span
+    className="ant-input-affix-wrapper"
+  >
+    <input
+      className="ant-input"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Search item"
+      style={null}
+      type="text"
+      value=""
+    />
+    <span
+      className="ant-input-suffix"
+    />
+  </span>
+  <div
+    className="ant-slider ant-slider-with-marks"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="ant-slider-rail"
+      style={Object {}}
+    />
+    <div
+      className="ant-slider-track ant-slider-track-1"
+      style={
+        Object {
+          "left": "0%",
+          "width": "100%",
+        }
+      }
+    />
+    <div
+      className="ant-slider-step"
+    >
+      <span
+        className="ant-slider-dot ant-slider-dot-active"
+        style={
+          Object {
+            "left": "0%",
+          }
+        }
+      />
+      <span
+        className="ant-slider-dot ant-slider-dot-active"
+        style={
+          Object {
+            "left": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      aria-disabled={false}
+      aria-valuemax={110}
+      aria-valuemin={0}
+      aria-valuenow={0}
+      className="ant-slider-handle ant-slider-handle-1"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="slider"
+      style={
+        Object {
+          "left": "0%",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      aria-disabled={false}
+      aria-valuemax={110}
+      aria-valuemin={0}
+      aria-valuenow={110}
+      className="ant-slider-handle ant-slider-handle-2"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="slider"
+      style={
+        Object {
+          "left": "100%",
+        }
+      }
+      tabIndex={0}
+    />
+    <div
+      className="ant-slider-mark"
+    >
+      <span
+        className="ant-slider-mark-text ant-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "0%",
+            "msTransform": "translateX(-50%)",
+            "transform": "translateX(-50%)",
+          }
+        }
+      >
+        0
+      </span>
+      <span
+        className="ant-slider-mark-text ant-slider-mark-text-active"
+        onMouseDown={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "left": "100%",
+            "msTransform": "translateX(-50%)",
+            "transform": "translateX(-50%)",
+          }
+        }
+      >
+        110
+      </span>
+    </div>
+  </div>
+  <h3>
+    Rating
+  </h3>
+  <div
+    className="ant-checkbox-group sc-bdVaJa bjRolG"
+  >
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value={1}
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        <div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value={2}
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        <div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value={3}
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        <div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value={4}
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        <div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="lightgray"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value={5}
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        <div>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-star fa-w-18 "
+            color="orange"
+            data-icon="star"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </span>
+    </label>
+  </div>
+  <h3>
+    Sizes
+  </h3>
+  <div
+    className="ant-checkbox-group sc-bwzfXH vJuxo"
+  >
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="XL"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        XL
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="L"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        L
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="M"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        M
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="S"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        S
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="XS"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        XS
+      </span>
+    </label>
+  </div>
+  <h3>
+    Tags
+  </h3>
+  <div
+    className="ant-checkbox-group sc-htpNat bUczlA"
+  >
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Polos"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Polos
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Pants"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Pants
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Jackets"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Jackets
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Shirts"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Shirts
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Dresses"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Dresses
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Cardigans"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Cardigans
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Tops"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Tops
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="Trench Coats"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        Trench Coats
+      </span>
+    </label>
+  </div>
+  <h3>
+    Colors
+  </h3>
+  <div
+    className="ant-checkbox-group sc-bxivhb lkJUvr"
+  >
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="red"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        red
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="yellow"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        yellow
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="blue"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        blue
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="white"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        white
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="purple"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        purple
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="green"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        green
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="black"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        black
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="grey"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        grey
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="pink"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        pink
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="brown"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        brown
+      </span>
+    </label>
+    <label
+      className="ant-checkbox-group-item ant-checkbox-wrapper"
+    >
+      <span
+        className="ant-checkbox"
+        style={Object {}}
+      >
+        <input
+          checked={false}
+          className="ant-checkbox-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="checkbox"
+          value="orange"
+        />
+        <span
+          className="ant-checkbox-inner"
+        />
+      </span>
+      <span>
+        orange
+      </span>
+    </label>
+  </div>
+  <div
+    className="sc-EHOje hZTaHD"
+  >
+    <button
+      className="ant-btn ant-btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Reset
+      </span>
+    </button>
+  </div>
+</article>
+`;

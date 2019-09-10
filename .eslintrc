@@ -2,7 +2,8 @@
 {
   "env": {
       "browser": true,
-      "node": true
+      "node": true,
+      "jest": true,
   },
   "extends": ["airbnb", "prettier", "prettier/react"],
   "parser": "babel-eslint",
@@ -29,6 +30,7 @@
         "ignoreUrls": true,
         "code": 100
       }],
-      "global-require": 0
+      "global-require": 0,
+      "react/jsx-props-no-spreading": 0,
   }
 }

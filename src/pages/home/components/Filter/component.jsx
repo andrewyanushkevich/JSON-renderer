@@ -96,7 +96,7 @@ class Filter extends PureComponent {
 
   handleSearch = e => {
     this.setState({
-      search: e.target.value,
+      search: e,
     });
   };
 

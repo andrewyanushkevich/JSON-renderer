@@ -13,7 +13,7 @@ import sortItems from 'helpers/sortItems';
 import getItemsFromJSON from 'api/getItemsFromJSON';
 import ItemList from './component';
 
-const getItems = () => async dispatch => {
+export const getItems = () => async dispatch => {
   try {
     dispatch(getItemsRequest());
 

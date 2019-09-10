@@ -10,7 +10,7 @@ import { StyledList, StyledPagination } from './styles';
 class ItemList extends PureComponent {
   state = {
     currentPage: 1,
-    itemsPerPAge: 9,
+    itemsPerPage: 9,
   };
 
   componentDidMount() {
@@ -30,12 +30,12 @@ class ItemList extends PureComponent {
 
   render() {
     const { items } = this.props;
-    const { currentPage, itemsPerPAge } = this.state;
+    const { currentPage, itemsPerPage } = this.state;
     return (
       <StyledList>
         <div>
           {items
-            .slice(itemsPerPAge * (currentPage - 1), itemsPerPAge * currentPage)
+            .slice(itemsPerPage * (currentPage - 1), itemsPerPage * currentPage)
             .map(elem => (
               <Item item={elem} key={elem._id.$oid} />
             ))}
@@ -43,7 +43,7 @@ class ItemList extends PureComponent {
         <StyledPagination
           total={items.length}
           onChange={this.handlePageChange}
-          pageSize={itemsPerPAge}
+          pageSize={itemsPerPage}
         />
       </StyledList>
     );
