@@ -61,7 +61,7 @@ class ItemDetails extends Component {
             <StyledCarousel autoplay>
               {item.images.map(elem => (
                 <Fragment key={elem}>
-                  <Img srcSet={elem} />
+                  <Img srcSet={elem} alt="Item" />
                 </Fragment>
               ))}
             </StyledCarousel>

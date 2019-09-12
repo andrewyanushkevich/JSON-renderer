@@ -38,8 +38,8 @@ export const StyledItem = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 160px;
   margin: 0 auto;
 `;
 

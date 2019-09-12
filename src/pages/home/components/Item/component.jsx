@@ -33,7 +33,7 @@ class Item extends Component {
         <Title>{item.title}</Title>
         <div>
           <div>
-            <Img srcSet={item.images[0]} />
+            <Img srcSet={item.images[0]} alt="Item" />
             <RatingWrapper>
               <Rating stars={item.rating} totalStars={5} />
             </RatingWrapper>
