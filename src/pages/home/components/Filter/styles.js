@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable arrow-body-style */
+/* istanbul ignore file */
 import styled from 'styled-components';
 
 export const StyledFilter = styled.article`

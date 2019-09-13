@@ -47,7 +47,6 @@ const filteredItemsSelector = createSelector(
 
 const mapStateToProps = state => ({
   items: filteredItemsSelector(state),
-  loading: state.product.loading,
 });
 
 const mapDispatchToProps = dispatch => ({

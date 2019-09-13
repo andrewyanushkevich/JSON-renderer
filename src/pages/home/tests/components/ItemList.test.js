@@ -7,7 +7,6 @@ import puppeteer from 'puppeteer';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import promiseMiddleware from 'redux-promise-middleware';
 
 import { items } from 'mockups';
 import ItemList from 'pages/home/components/ItemList/component';
@@ -82,7 +81,7 @@ describe('(Container) Item List ', () => {
     },
     sort: { order: 'price_min_max' },
   };
-  const mockStore = configureStore([thunk, promiseMiddleware]);
+  const mockStore = configureStore([thunk]);
   const store = mockStore(initialState);
   beforeEach(() => {
     component = mount(

@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
     "antd": "^3.22.0",
+    "express": "^4.17.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.8.2",
     "react": "^16.9.0",
@@ -20,6 +18,7 @@
     "react-scripts": "3.1.1",
     "react-test-renderer": "^16.9.0",
     "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
@@ -27,6 +26,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-server": "npm run build && npm run build-server && npm run run-server",
+    "build-server": "webpack --config webpack.server.js --mode=development",
+    "run-server": "nodemon ./build-server/bundle.js",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage all",
     "lint": "eslint src -c .eslintrc --ext js,jsx --fix",
@@ -62,11 +64,14 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "jest-image-snapshot": "^2.11.0",
+    "nodemon": "^1.19.2",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2",
     "prettier-eslint-cli": "^5.0.0",
     "puppeteer": "^1.19.0",
-    "redux-mock-store": "^1.5.3"
+    "redux-mock-store": "^1.5.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-node-externals": "^1.7.2"
   },
   "pre-commit": [
     "lint",

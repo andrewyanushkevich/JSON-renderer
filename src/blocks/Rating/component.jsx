@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from 'antd';
 
 const getStars = (totalCount, activeCount) => {
   const stars = [];
@@ -24,9 +23,9 @@ const Rating = props => {
     <div>
       {starsArray.map(elem =>
         elem.active ? (
-          <FontAwesomeIcon icon={faStar} color="orange" key={elem.id} />
+          <Icon type="star" theme="filled" key={elem.id} />
         ) : (
-          <FontAwesomeIcon icon={faStar} color="lightgray" key={elem.id} />
+          <Icon type="star" key={elem.id} />
         ),
       )}
     </div>
